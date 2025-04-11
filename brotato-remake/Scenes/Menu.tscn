@@ -1,19 +1,21 @@
-[gd_scene load_steps=9 format=3 uid="uid://xykpjoyv1fhu"]
+[gd_scene load_steps=11 format=3 uid="uid://xykpjoyv1fhu"]
 
 [ext_resource type="Script" uid="uid://b7hqqsren51ip" path="res://Scripts/Main_Menu.gd" id="1_idohh"]
 [ext_resource type="Texture2D" uid="uid://docv45do4coyb" path="res://Images/Tela Inicial.png" id="2_wfhf6"]
 [ext_resource type="Texture2D" uid="uid://8tameeleqm8l" path="res://Images/setinha.png" id="3_3jcrr"]
 [ext_resource type="Texture2D" uid="uid://byywp2xrba823" path="res://Images/Retangulo Cinza.png" id="4_aobxe"]
+[ext_resource type="Script" uid="uid://deuepitqe40pt" path="res://Scripts/Canvas.gd" id="4_wfhf6"]
 [ext_resource type="Texture2D" uid="uid://byde2qxojfhfp" path="res://Images/Icon_Config.png" id="5_ab40c"]
 [ext_resource type="Texture2D" uid="uid://bepprvxln5xpr" path="res://Images/Quit.png" id="6_sjh0l"]
+[ext_resource type="Texture2D" uid="uid://dtpntdrjfkhhs" path="res://Images/Icon Notes.png" id="8_3jcrr"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ouk20"]
 texture = ExtResource("2_wfhf6")
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nrnbx"]
-bg_color = Color(0, 0, 0, 0.478431)
+bg_color = Color(0, 0, 0, 0.784314)
 
-[node name="Menu" type="Control"]
+[node name="Telas" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -28,15 +30,16 @@ offset_right = 1280.0
 offset_bottom = 720.0
 theme_override_styles/panel = SubResource("StyleBoxTexture_ouk20")
 
-[node name="Tela_Config" type="CanvasLayer" parent="."]
-visible = false
+[node name="Telas" type="CanvasLayer" parent="."]
+script = ExtResource("4_wfhf6")
 
-[node name="Panel" type="Panel" parent="Tela_Config"]
+[node name="Menu Config" type="Panel" parent="Telas"]
+visible = false
 offset_right = 1280.0
 offset_bottom = 720.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_nrnbx")
 
-[node name="Button" type="Button" parent="Tela_Config/Panel"]
+[node name="Voltar" type="Button" parent="Telas/Menu Config"]
 layout_mode = 0
 offset_left = 19.0
 offset_top = 24.0
@@ -49,7 +52,7 @@ flat = true
 alignment = 2
 expand_icon = true
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Tela_Config/Panel"]
+[node name="Botoes Config" type="VBoxContainer" parent="Telas/Menu Config"]
 layout_mode = 0
 offset_left = 433.0
 offset_top = 232.0
@@ -58,7 +61,7 @@ offset_bottom = 465.0
 alignment = 1
 metadata/_edit_group_ = true
 
-[node name="Button2" type="Button" parent="Tela_Config/Panel/VBoxContainer"]
+[node name="geral" type="Button" parent="Telas/Menu Config/Botoes Config"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 30
 text = "Geral"
@@ -66,7 +69,7 @@ icon = ExtResource("4_aobxe")
 flat = true
 icon_alignment = 1
 
-[node name="Button3" type="Button" parent="Tela_Config/Panel/VBoxContainer"]
+[node name="Jogabilidade" type="Button" parent="Telas/Menu Config/Botoes Config"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 30
 text = "Jogabilidade"
@@ -74,7 +77,7 @@ icon = ExtResource("4_aobxe")
 flat = true
 icon_alignment = 1
 
-[node name="Button4" type="Button" parent="Tela_Config/Panel/VBoxContainer"]
+[node name="Armaz_ nuvem" type="Button" parent="Telas/Menu Config/Botoes Config"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 15
 text = "    Armazenamento em Nuvem"
@@ -83,7 +86,7 @@ flat = true
 alignment = 0
 icon_alignment = 1
 
-[node name="Button5" type="Button" parent="Tela_Config/Panel/VBoxContainer"]
+[node name="Datenschutz" type="Button" parent="Telas/Menu Config/Botoes Config"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 30
 text = "Datenschutz"
@@ -91,31 +94,109 @@ icon = ExtResource("4_aobxe")
 flat = true
 icon_alignment = 1
 
-[node name="HBoxContainer" type="HBoxContainer" parent="."]
-custom_minimum_size = Vector2(60, 60)
+[node name="Menu Config Geral" type="Panel" parent="Telas"]
+visible = false
+offset_right = 1280.0
+offset_bottom = 720.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_nrnbx")
+
+[node name="Voltar" type="Button" parent="Telas/Menu Config Geral"]
 layout_mode = 0
-offset_left = 18.0
-offset_top = 19.0
-offset_right = 1.8e+07
-offset_bottom = 7.50002e+06
-scale = Vector2(1e-05, 1e-05)
+offset_left = 19.0
+offset_top = 24.0
+offset_right = 198.0
+offset_bottom = 81.0
+theme_override_font_sizes/font_size = 35
+text = "Voltar"
+icon = ExtResource("3_3jcrr")
+flat = true
+alignment = 2
+expand_icon = true
+
+[node name="Botoes Config" type="VBoxContainer" parent="Telas/Menu Config Geral"]
+layout_mode = 0
+offset_left = 433.0
+offset_top = 232.0
+offset_right = 795.0
+offset_bottom = 465.0
+alignment = 1
 metadata/_edit_group_ = true
 
-[node name="Config" type="Button" parent="HBoxContainer"]
+[node name="geral" type="Button" parent="Telas/Menu Config Geral/Botoes Config"]
 layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "Geral"
+icon = ExtResource("4_aobxe")
+flat = true
+icon_alignment = 1
+
+[node name="Jogabilidade" type="Button" parent="Telas/Menu Config Geral/Botoes Config"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "Jogabilidade"
+icon = ExtResource("4_aobxe")
+flat = true
+icon_alignment = 1
+
+[node name="Armaz_ nuvem" type="Button" parent="Telas/Menu Config Geral/Botoes Config"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 15
+text = "    Armazenamento em Nuvem"
+icon = ExtResource("4_aobxe")
+flat = true
+alignment = 0
+icon_alignment = 1
+
+[node name="Datenschutz" type="Button" parent="Telas/Menu Config Geral/Botoes Config"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "Datenschutz"
+icon = ExtResource("4_aobxe")
+flat = true
+icon_alignment = 1
+
+[node name="Buttons" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Config" type="Button" parent="Buttons"]
+layout_mode = 2
+offset_left = 18.0
+offset_top = 19.0
+offset_right = 98.0
+offset_bottom = 99.0
 size_flags_horizontal = 3
 icon = ExtResource("5_ab40c")
 flat = true
 icon_alignment = 1
 expand_icon = true
 
-[node name="Quit" type="Button" parent="HBoxContainer"]
+[node name="Quit" type="Button" parent="Buttons"]
 layout_mode = 2
+offset_left = 100.0
+offset_top = 19.0
+offset_right = 180.0
+offset_bottom = 99.0
 size_flags_horizontal = 3
 icon = ExtResource("6_sjh0l")
 flat = true
 icon_alignment = 1
 expand_icon = true
 
-[connection signal="pressed" from="HBoxContainer/Config" to="." method="_on_config_pressed"]
-[connection signal="pressed" from="HBoxContainer/Quit" to="." method="_on_quit_pressed"]
+[node name="Note" type="Button" parent="Buttons"]
+layout_mode = 2
+offset_left = 6.0
+offset_top = 273.0
+offset_right = 89.0
+offset_bottom = 375.0
+size_flags_horizontal = 3
+icon = ExtResource("8_3jcrr")
+flat = true
+icon_alignment = 1
+expand_icon = true
+
+[connection signal="pressed" from="Telas/Menu Config/Voltar" to="Telas" method="_on_button_pressed"]
+[connection signal="pressed" from="Telas/Menu Config Geral/Voltar" to="Telas" method="_on_button_pressed"]
+[connection signal="pressed" from="Buttons/Config" to="Telas" method="_on_config_pressed"]
+[connection signal="pressed" from="Buttons/Quit" to="." method="_on_quit_pressed"]
