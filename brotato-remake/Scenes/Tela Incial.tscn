@@ -1,0 +1,529 @@
+[gd_scene load_steps=21 format=3 uid="uid://xykpjoyv1fhu"]
+
+[ext_resource type="Script" uid="uid://b7hqqsren51ip" path="res://Scripts/Funcoes do Menu.gd" id="1_yiqt1"]
+[ext_resource type="Texture2D" uid="uid://docv45do4coyb" path="res://Images/Tela Inicial.png" id="2_aixa6"]
+[ext_resource type="Script" uid="uid://deuepitqe40pt" path="res://Scripts/Telas.gd" id="3_cwhh8"]
+[ext_resource type="Texture2D" uid="uid://dbauir50i6ksn" path="res://Images/X.png" id="4_i0ttb"]
+[ext_resource type="Texture2D" uid="uid://byywp2xrba823" path="res://Images/Retangulo Cinza.png" id="5_iwm1g"]
+[ext_resource type="Texture2D" uid="uid://8tameeleqm8l" path="res://Images/setinha.png" id="6_xrjum"]
+[ext_resource type="Texture2D" uid="uid://bkf6qb2b5vlpm" path="res://Images/Retangulo Cinza 2.png" id="7_bo1vy"]
+[ext_resource type="Texture2D" uid="uid://ce23o617vektr" path="res://Images/Toogle Button Checked.png" id="8_xoli0"]
+[ext_resource type="Texture2D" uid="uid://dfoevdrpfj7ks" path="res://Images/Toogle Button Unchecked.png" id="9_h3y4y"]
+[ext_resource type="Texture2D" uid="uid://coy2d10cwu072" path="res://Images/Seta.png" id="10_yqbay"]
+[ext_resource type="Script" uid="uid://bortbefx6v43" path="res://Scenes/Botoes.gd" id="11_aixa6"]
+[ext_resource type="Texture2D" uid="uid://bqkfxipfrdd5b" path="res://Images/Retangulo Preto 2.png" id="11_xhnva"]
+[ext_resource type="Texture2D" uid="uid://cvjdbkgs3rmcb" path="res://Images/Icon Config.png" id="12_v7nyg"]
+[ext_resource type="Texture2D" uid="uid://bpgcj6kabo78g" path="res://Images/Retangulo Preto.png" id="13_ei1si"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ouk20"]
+texture = ExtResource("2_aixa6")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nrnbx"]
+bg_color = Color(0, 0, 0, 0.784314)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3jcrr"]
+texture = ExtResource("7_bo1vy")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_x0ao6"]
+texture = ExtResource("11_xhnva")
+texture_margin_left = 33.0
+texture_margin_right = 33.0
+texture_margin_bottom = 33.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_a8aa6"]
+texture = ExtResource("13_ei1si")
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_byewe"]
+load_path = "res://.godot/imported/Icon Notes.png-05db620a3cc1320c774f1b46c4ce8215.ctex"
+
+[node name="Telas" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_yiqt1")
+
+[node name="Fundo" type="Panel" parent="."]
+layout_mode = 0
+offset_right = 1280.0
+offset_bottom = 720.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_ouk20")
+
+[node name="Telas" type="CanvasLayer" parent="."]
+script = ExtResource("3_cwhh8")
+
+[node name="Menu Config" type="Panel" parent="Telas"]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_nrnbx")
+
+[node name="X" type="Button" parent="Telas/Menu Config"]
+layout_mode = 0
+offset_left = 1055.0
+offset_top = 40.0
+offset_right = 1092.0
+offset_bottom = 91.0
+theme_override_font_sizes/font_size = 35
+icon = ExtResource("4_i0ttb")
+flat = true
+alignment = 2
+expand_icon = true
+
+[node name="Botoes Config" type="VBoxContainer" parent="Telas/Menu Config"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -181.0
+offset_top = -116.5
+offset_right = 181.0
+offset_bottom = 116.5
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+metadata/_edit_group_ = true
+
+[node name="geral" type="Button" parent="Telas/Menu Config/Botoes Config"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "Geral"
+icon = ExtResource("5_iwm1g")
+flat = true
+icon_alignment = 1
+
+[node name="Jogabilidade" type="Button" parent="Telas/Menu Config/Botoes Config"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "Jogabilidade"
+icon = ExtResource("5_iwm1g")
+flat = true
+icon_alignment = 1
+
+[node name="Armaz_ nuvem" type="Button" parent="Telas/Menu Config/Botoes Config"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 15
+text = "    Armazenamento em Nuvem"
+icon = ExtResource("5_iwm1g")
+flat = true
+alignment = 0
+icon_alignment = 1
+
+[node name="Datenschutz" type="Button" parent="Telas/Menu Config/Botoes Config"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "Datenschutz"
+icon = ExtResource("5_iwm1g")
+flat = true
+icon_alignment = 1
+
+[node name="Menu Config Jogabilidade" type="Panel" parent="Telas"]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/panel = SubResource("StyleBoxFlat_nrnbx")
+
+[node name="Voltar Jogabilidade" type="Button" parent="Telas/Menu Config Jogabilidade"]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 24.0
+offset_right = 198.0
+offset_bottom = 81.0
+theme_override_font_sizes/font_size = 35
+text = "Voltar"
+icon = ExtResource("6_xrjum")
+flat = true
+alignment = 2
+expand_icon = true
+
+[node name="Botoes" type="HBoxContainer" parent="Telas/Menu Config Jogabilidade"]
+layout_mode = 0
+offset_left = 124.0
+offset_top = 198.0
+offset_right = 972.0
+offset_bottom = 426.0
+theme_override_constants/separation = 19
+
+[node name="Botoes Esquerda" type="VBoxContainer" parent="Telas/Menu Config Jogabilidade/Botoes"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 13
+
+[node name="Vibracao" type="Panel" parent="Telas/Menu Config Jogabilidade/Botoes/Botoes Esquerda"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_3jcrr")
+
+[node name="CheckButton" type="CheckButton" parent="Telas/Menu Config Jogabilidade/Botoes/Botoes Esquerda/Vibracao"]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 2.0
+offset_right = 393.0
+offset_bottom = 34.0
+theme_override_icons/checked = ExtResource("8_xoli0")
+theme_override_icons/unchecked = ExtResource("9_h3y4y")
+text = "Vibracao"
+icon_alignment = 1
+expand_icon = true
+text_direction = 1
+
+[node name="Barra PV do Personagem" type="Panel" parent="Telas/Menu Config Jogabilidade/Botoes/Botoes Esquerda"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_3jcrr")
+
+[node name="CheckButton" type="CheckButton" parent="Telas/Menu Config Jogabilidade/Botoes/Botoes Esquerda/Barra PV do Personagem"]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 2.0
+offset_right = 393.0
+offset_bottom = 34.0
+theme_override_icons/checked = ExtResource("8_xoli0")
+theme_override_icons/unchecked = ExtResource("9_h3y4y")
+text = "Barra de PV do Personagem"
+icon_alignment = 1
+expand_icon = true
+text_direction = 1
+
+[node name="Barra de Pv nos Chefes" type="Panel" parent="Telas/Menu Config Jogabilidade/Botoes/Botoes Esquerda"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_3jcrr")
+
+[node name="CheckButton" type="CheckButton" parent="Telas/Menu Config Jogabilidade/Botoes/Botoes Esquerda/Barra de Pv nos Chefes"]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 2.0
+offset_right = 393.0
+offset_bottom = 34.0
+theme_override_icons/checked = ExtResource("8_xoli0")
+theme_override_icons/unchecked = ExtResource("9_h3y4y")
+text = "Barra de Pv nos Chefes"
+icon_alignment = 1
+expand_icon = true
+text_direction = 1
+
+[node name="Joystick Fixo" type="Panel" parent="Telas/Menu Config Jogabilidade/Botoes/Botoes Esquerda"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_3jcrr")
+
+[node name="CheckButton" type="CheckButton" parent="Telas/Menu Config Jogabilidade/Botoes/Botoes Esquerda/Joystick Fixo"]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 2.0
+offset_right = 393.0
+offset_bottom = 34.0
+theme_override_icons/checked = ExtResource("8_xoli0")
+theme_override_icons/unchecked = ExtResource("9_h3y4y")
+text = "Joystick Fixo"
+icon_alignment = 1
+expand_icon = true
+text_direction = 1
+
+[node name="Pontuacao e Onda" type="HBoxContainer" parent="Telas/Menu Config Jogabilidade/Botoes/Botoes Esquerda"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Pontuacao sem Fim" type="Panel" parent="Telas/Menu Config Jogabilidade/Botoes/Botoes Esquerda/Pontuacao e Onda"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Button" type="Button" parent="Telas/Menu Config Jogabilidade/Botoes/Botoes Esquerda/Pontuacao e Onda/Pontuacao sem Fim"]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 2.0
+offset_right = 391.0
+offset_bottom = 35.0
+text = "Pontuacao (sem fim) "
+flat = true
+alignment = 0
+icon_alignment = 2
+
+[node name="Onda Maxima" type="Panel" parent="Telas/Menu Config Jogabilidade/Botoes/Botoes Esquerda/Pontuacao e Onda"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_3jcrr")
+
+[node name="Tipo de Onda" type="Button" parent="Telas/Menu Config Jogabilidade/Botoes/Botoes Esquerda/Pontuacao e Onda/Onda Maxima"]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 2.0
+offset_right = 192.0
+offset_bottom = 35.0
+text = "Onda Maxima"
+icon = ExtResource("10_yqbay")
+flat = true
+alignment = 0
+icon_alignment = 2
+script = ExtResource("11_aixa6")
+
+[node name="Ondas" type="Panel" parent="Telas/Menu Config Jogabilidade/Botoes/Botoes Esquerda/Pontuacao e Onda/Onda Maxima/Tipo de Onda"]
+visible = false
+layout_mode = 2
+offset_left = -6.0
+offset_top = 33.0
+offset_right = 201.0
+offset_bottom = 124.0
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_x0ao6")
+
+[node name="Onda Maxima" type="Button" parent="Telas/Menu Config Jogabilidade/Botoes/Botoes Esquerda/Pontuacao e Onda/Onda Maxima/Tipo de Onda/Ondas"]
+layout_mode = 2
+offset_left = 27.0
+offset_top = 1.0
+offset_right = 178.0
+offset_bottom = 45.0
+size_flags_vertical = 3
+text = "Onda Maxima"
+flat = true
+icon_alignment = 1
+
+[node name="Maior dificuldade" type="Button" parent="Telas/Menu Config Jogabilidade/Botoes/Botoes Esquerda/Pontuacao e Onda/Onda Maxima/Tipo de Onda/Ondas"]
+layout_mode = 2
+offset_left = 25.0
+offset_top = 43.0
+offset_right = 181.0
+offset_bottom = 87.0
+size_flags_vertical = 3
+text = "Maior Dificuldade
+"
+flat = true
+icon_alignment = 1
+
+[node name="Botoes Direita" type="VBoxContainer" parent="Telas/Menu Config Jogabilidade/Botoes"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 13
+metadata/_edit_group_ = true
+
+[node name="Destaque de Personagem" type="Panel" parent="Telas/Menu Config Jogabilidade/Botoes/Botoes Direita"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_3jcrr")
+
+[node name="CheckButton" type="CheckButton" parent="Telas/Menu Config Jogabilidade/Botoes/Botoes Direita/Destaque de Personagem"]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 2.0
+offset_right = 393.0
+offset_bottom = 34.0
+theme_override_icons/checked = ExtResource("8_xoli0")
+theme_override_icons/unchecked = ExtResource("9_h3y4y")
+text = "Destaque de Personagem"
+icon_alignment = 1
+expand_icon = true
+text_direction = 1
+
+[node name="Destaque de Armas" type="Panel" parent="Telas/Menu Config Jogabilidade/Botoes/Botoes Direita"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_3jcrr")
+metadata/_edit_group_ = true
+
+[node name="CheckButton" type="CheckButton" parent="Telas/Menu Config Jogabilidade/Botoes/Botoes Direita/Destaque de Armas"]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 2.0
+offset_right = 393.0
+offset_bottom = 34.0
+theme_override_icons/checked = ExtResource("8_xoli0")
+theme_override_icons/unchecked = ExtResource("9_h3y4y")
+text = "Destaque de Armas"
+icon_alignment = 1
+expand_icon = true
+text_direction = 1
+
+[node name="Destaque de Projeteis" type="Panel" parent="Telas/Menu Config Jogabilidade/Botoes/Botoes Direita"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_3jcrr")
+
+[node name="CheckButton" type="CheckButton" parent="Telas/Menu Config Jogabilidade/Botoes/Botoes Direita/Destaque de Projeteis"]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 2.0
+offset_right = 393.0
+offset_bottom = 34.0
+theme_override_icons/checked = ExtResource("8_xoli0")
+theme_override_icons/unchecked = ExtResource("9_h3y4y")
+text = "Destaque de Projeteis"
+icon_alignment = 1
+expand_icon = true
+text_direction = 1
+
+[node name="Escurecimento de Tela" type="Panel" parent="Telas/Menu Config Jogabilidade/Botoes/Botoes Direita"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_3jcrr")
+
+[node name="CheckButton" type="CheckButton" parent="Telas/Menu Config Jogabilidade/Botoes/Botoes Direita/Escurecimento de Tela"]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 2.0
+offset_right = 393.0
+offset_bottom = 34.0
+theme_override_icons/checked = ExtResource("8_xoli0")
+theme_override_icons/unchecked = ExtResource("9_h3y4y")
+text = "Escurecimento de Tela"
+icon_alignment = 1
+expand_icon = true
+text_direction = 1
+
+[node name="Explosoes" type="Panel" parent="Telas/Menu Config Jogabilidade/Botoes/Botoes Direita"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_3jcrr")
+
+[node name="CheckButton" type="CheckButton" parent="Telas/Menu Config Jogabilidade/Botoes/Botoes Direita/Explosoes"]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 2.0
+offset_right = 393.0
+offset_bottom = 34.0
+theme_override_icons/checked = ExtResource("8_xoli0")
+theme_override_icons/unchecked = ExtResource("9_h3y4y")
+text = "Explosoes
+"
+icon_alignment = 1
+expand_icon = true
+text_direction = 1
+
+[node name="Menu Config Geral" type="Panel" parent="Telas"]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_nrnbx")
+
+[node name="Voltar" type="Button" parent="Telas/Menu Config Geral"]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 24.0
+offset_right = 198.0
+offset_bottom = 81.0
+theme_override_font_sizes/font_size = 35
+text = "Voltar"
+icon = ExtResource("6_xrjum")
+flat = true
+alignment = 2
+expand_icon = true
+
+[node name="Botoes Config" type="VBoxContainer" parent="Telas/Menu Config Geral"]
+layout_mode = 0
+offset_left = 433.0
+offset_top = 232.0
+offset_right = 795.0
+offset_bottom = 465.0
+alignment = 1
+metadata/_edit_group_ = true
+
+[node name="geral" type="Button" parent="Telas/Menu Config Geral/Botoes Config"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "Geral"
+icon = ExtResource("5_iwm1g")
+flat = true
+icon_alignment = 1
+
+[node name="Jogabilidade" type="Button" parent="Telas/Menu Config Geral/Botoes Config"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "Jogabilidade"
+icon = ExtResource("5_iwm1g")
+flat = true
+icon_alignment = 1
+
+[node name="Armaz_ nuvem" type="Button" parent="Telas/Menu Config Geral/Botoes Config"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 15
+text = "    Armazenamento em Nuvem"
+icon = ExtResource("5_iwm1g")
+flat = true
+alignment = 0
+icon_alignment = 1
+
+[node name="Datenschutz" type="Button" parent="Telas/Menu Config Geral/Botoes Config"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "Datenschutz"
+icon = ExtResource("5_iwm1g")
+flat = true
+icon_alignment = 1
+
+[node name="Buttons" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 329.0
+offset_bottom = 495.0
+
+[node name="Config" type="Button" parent="Buttons"]
+layout_mode = 2
+offset_left = 18.0
+offset_top = 19.0
+offset_right = 98.0
+offset_bottom = 99.0
+size_flags_horizontal = 3
+icon = ExtResource("12_v7nyg")
+flat = true
+icon_alignment = 1
+expand_icon = true
+
+[node name="Quit" type="Button" parent="Buttons"]
+layout_mode = 2
+offset_left = 106.0
+offset_top = 19.0
+offset_right = 186.0
+offset_bottom = 99.0
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 20
+text = "Quit"
+flat = true
+icon_alignment = 1
+expand_icon = true
+
+[node name="Note" type="Panel" parent="Buttons"]
+self_modulate = Color(0, 0, 0, 0.705882)
+layout_mode = 0
+offset_left = 27.0
+offset_top = 228.0
+offset_right = 109.0
+offset_bottom = 364.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_a8aa6")
+
+[node name="Note" type="Button" parent="Buttons/Note"]
+layout_mode = 2
+offset_left = 2.0
+offset_top = 18.0
+offset_right = 85.0
+offset_bottom = 120.0
+size_flags_horizontal = 3
+icon = SubResource("CompressedTexture2D_byewe")
+flat = true
+icon_alignment = 1
+expand_icon = true
+
+[connection signal="pressed" from="Telas/Menu Config/X" to="Telas" method="_on_x_pressed"]
+[connection signal="pressed" from="Telas/Menu Config/Botoes Config/Jogabilidade" to="Telas" method="_on_jogabilidade_pressed"]
+[connection signal="pressed" from="Telas/Menu Config Jogabilidade/Voltar Jogabilidade" to="Telas" method="_on_voltar_jogabilidade_pressed"]
+[connection signal="pressed" from="Telas/Menu Config Jogabilidade/Botoes/Botoes Esquerda/Pontuacao e Onda/Onda Maxima/Tipo de Onda" to="Telas" method="_on_tipo_de_onda_pressed"]
+[connection signal="pressed" from="Telas/Menu Config Jogabilidade/Botoes/Botoes Esquerda/Pontuacao e Onda/Onda Maxima/Tipo de Onda/Ondas/Onda Maxima" to="Telas/Menu Config Jogabilidade/Botoes/Botoes Esquerda/Pontuacao e Onda/Onda Maxima/Tipo de Onda" method="_on_onda_maxima_pressed"]
+[connection signal="pressed" from="Telas/Menu Config Jogabilidade/Botoes/Botoes Esquerda/Pontuacao e Onda/Onda Maxima/Tipo de Onda/Ondas/Maior dificuldade" to="Telas/Menu Config Jogabilidade/Botoes/Botoes Esquerda/Pontuacao e Onda/Onda Maxima/Tipo de Onda" method="_on_maior_dificuldade_pressed"]
+[connection signal="pressed" from="Telas/Menu Config Geral/Voltar" to="Telas" method="_on_button_pressed"]
+[connection signal="pressed" from="Buttons/Config" to="Telas" method="_on_config_pressed"]
+[connection signal="pressed" from="Buttons/Quit" to="." method="_on_quit_pressed"]

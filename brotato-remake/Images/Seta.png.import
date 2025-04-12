@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://2uckrbmj4yod"
-path="res://.godot/imported/Icon Notes.png-05db620a3cc1320c774f1b46c4ce8215.ctex"
+uid="uid://coy2d10cwu072"
+path="res://.godot/imported/Seta.png-d7b3bb9aff181b67eafce80a27ce03d5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Images/Icon Notes.png"
-dest_files=["res://.godot/imported/Icon Notes.png-05db620a3cc1320c774f1b46c4ce8215.ctex"]
+source_file="res://Images/Seta.png"
+dest_files=["res://.godot/imported/Seta.png-d7b3bb9aff181b67eafce80a27ce03d5.ctex"]
 
 [params]
 

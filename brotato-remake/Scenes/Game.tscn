@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://c6tc8aknet22k"]
 
-[ext_resource type="Script" uid="uid://deuepitqe40pt" path="res://Scripts/Canvas.gd" id="1_j5yw3"]
+[ext_resource type="Script" uid="uid://deuepitqe40pt" path="res://Scripts/Telas.gd" id="1_j5yw3"]
 [ext_resource type="Texture2D" uid="uid://8tameeleqm8l" path="res://Images/setinha.png" id="2_kldst"]
 [ext_resource type="Texture2D" uid="uid://byywp2xrba823" path="res://Images/Retangulo Cinza.png" id="3_b2bpf"]
 
