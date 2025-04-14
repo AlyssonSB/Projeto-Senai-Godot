@@ -1,0 +1,712 @@
+[gd_scene load_steps=18 format=3 uid="uid://6vihqkrs4aey"]
+
+[ext_resource type="Script" uid="uid://deuepitqe40pt" path="res://Scripts/Telas.gd" id="1_bre5d"]
+[ext_resource type="Texture2D" uid="uid://dbauir50i6ksn" path="res://Images/Design Botoes/X.png" id="2_n7ua5"]
+[ext_resource type="Texture2D" uid="uid://byywp2xrba823" path="res://Images/Design Botoes/Retangulo Cinza.png" id="3_h0npt"]
+[ext_resource type="Texture2D" uid="uid://b3mtedne0qcnd" path="res://Images/Icones/x _.png" id="4_emnuf"]
+[ext_resource type="Texture2D" uid="uid://8tameeleqm8l" path="res://Images/Icones/setinha.png" id="5_vmcsp"]
+[ext_resource type="Texture2D" uid="uid://bkf6qb2b5vlpm" path="res://Images/Design Botoes/Retangulo Cinza 2.png" id="6_qyw25"]
+[ext_resource type="Texture2D" uid="uid://ce23o617vektr" path="res://Images/Design Botoes/Toogle Button Checked.png" id="7_3s03j"]
+[ext_resource type="Texture2D" uid="uid://dfoevdrpfj7ks" path="res://Images/Design Botoes/Toogle Button Unchecked.png" id="8_3wpav"]
+[ext_resource type="Texture2D" uid="uid://coy2d10cwu072" path="res://Images/Icones/Seta.png" id="9_fv0yw"]
+[ext_resource type="Script" uid="uid://bortbefx6v43" path="res://Scripts/Botoes.gd" id="10_3e81i"]
+[ext_resource type="Texture2D" uid="uid://daasgmfjwho72" path="res://Images/Design Botoes/Retangulo Preto 3.png" id="11_pi653"]
+[ext_resource type="PackedScene" uid="uid://dcaq0siquimoh" path="res://Scenes/Music Controller.tscn" id="12_n7ua5"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uigm1"]
+bg_color = Color(0, 0, 0, 0.784314)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_bre5d"]
+texture = ExtResource("6_qyw25")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_n7ua5"]
+texture = ExtResource("11_pi653")
+texture_margin_left = 33.0
+texture_margin_right = 33.0
+texture_margin_bottom = 33.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_h0npt"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_emnuf"]
+
+[node name="Config" type="CanvasLayer"]
+visible = false
+script = ExtResource("1_bre5d")
+
+[node name="Botao Supremo" type="Button" parent="."]
+offset_right = 8.0
+offset_bottom = 8.0
+flat = true
+script = ExtResource("10_3e81i")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+
+[node name="Menu Config" type="Panel" parent="Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_uigm1")
+
+[node name="X" type="Button" parent="Control/Menu Config"]
+layout_mode = 0
+offset_left = 1055.0
+offset_top = 40.0
+offset_right = 1092.0
+offset_bottom = 91.0
+theme_override_font_sizes/font_size = 35
+icon = ExtResource("2_n7ua5")
+flat = true
+alignment = 2
+expand_icon = true
+
+[node name="Botoes Config" type="VBoxContainer" parent="Control/Menu Config"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -181.0
+offset_top = -116.5
+offset_right = 181.0
+offset_bottom = 116.5
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="Geral" type="Button" parent="Control/Menu Config/Botoes Config"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "Geral"
+icon = ExtResource("3_h0npt")
+flat = true
+icon_alignment = 1
+
+[node name="Jogabilidade" type="Button" parent="Control/Menu Config/Botoes Config"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "Jogabilidade"
+icon = ExtResource("3_h0npt")
+flat = true
+icon_alignment = 1
+
+[node name="Armaz_ nuvem" type="Button" parent="Control/Menu Config/Botoes Config"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 15
+text = "    Armazenamento em Nuvem"
+icon = ExtResource("3_h0npt")
+flat = true
+alignment = 0
+icon_alignment = 1
+
+[node name="X" type="Sprite2D" parent="Control/Menu Config/Botoes Config/Armaz_ nuvem"]
+position = Vector2(296, 25.5)
+scale = Vector2(0.907608, 0.703125)
+texture = ExtResource("4_emnuf")
+
+[node name="Datenschutz" type="Button" parent="Control/Menu Config/Botoes Config"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "Datenschutz"
+icon = ExtResource("3_h0npt")
+flat = true
+icon_alignment = 1
+
+[node name="Menu Config Jogabilidade" type="Panel" parent="Control"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/panel = SubResource("StyleBoxFlat_uigm1")
+
+[node name="Voltar Jogabilidade" type="Button" parent="Control/Menu Config Jogabilidade"]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 24.0
+offset_right = 198.0
+offset_bottom = 81.0
+theme_override_font_sizes/font_size = 35
+text = "Voltar"
+icon = ExtResource("5_vmcsp")
+flat = true
+alignment = 2
+expand_icon = true
+
+[node name="Botoes" type="HBoxContainer" parent="Control/Menu Config Jogabilidade"]
+layout_mode = 0
+offset_left = 153.0
+offset_top = 167.0
+offset_right = 1001.0
+offset_bottom = 455.0
+theme_override_constants/separation = 19
+
+[node name="Botoes Esquerda" type="VBoxContainer" parent="Control/Menu Config Jogabilidade/Botoes"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 13
+
+[node name="Jogabilidade" type="Button" parent="Control/Menu Config Jogabilidade/Botoes/Botoes Esquerda"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "Jogabilidade
+"
+flat = true
+
+[node name="Vibracao" type="Panel" parent="Control/Menu Config Jogabilidade/Botoes/Botoes Esquerda"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_bre5d")
+
+[node name="CheckButton" type="CheckButton" parent="Control/Menu Config Jogabilidade/Botoes/Botoes Esquerda/Vibracao" groups=["Toogle"]]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 2.0
+offset_right = 393.0
+offset_bottom = 34.0
+theme_override_icons/checked = ExtResource("7_3s03j")
+theme_override_icons/unchecked = ExtResource("8_3wpav")
+text = "Vibracao"
+icon_alignment = 1
+expand_icon = true
+text_direction = 1
+
+[node name="Barra PV do Personagem" type="Panel" parent="Control/Menu Config Jogabilidade/Botoes/Botoes Esquerda"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_bre5d")
+
+[node name="CheckButton" type="CheckButton" parent="Control/Menu Config Jogabilidade/Botoes/Botoes Esquerda/Barra PV do Personagem" groups=["Toogle"]]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 2.0
+offset_right = 393.0
+offset_bottom = 34.0
+theme_override_icons/checked = ExtResource("7_3s03j")
+theme_override_icons/unchecked = ExtResource("8_3wpav")
+text = "Barra de PV do Personagem"
+icon_alignment = 1
+expand_icon = true
+text_direction = 1
+
+[node name="Barra de Pv nos Chefes" type="Panel" parent="Control/Menu Config Jogabilidade/Botoes/Botoes Esquerda"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_bre5d")
+
+[node name="CheckButton" type="CheckButton" parent="Control/Menu Config Jogabilidade/Botoes/Botoes Esquerda/Barra de Pv nos Chefes" groups=["Toogle"]]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 2.0
+offset_right = 393.0
+offset_bottom = 34.0
+theme_override_icons/checked = ExtResource("7_3s03j")
+theme_override_icons/unchecked = ExtResource("8_3wpav")
+text = "Barra de Pv nos Chefes"
+icon_alignment = 1
+expand_icon = true
+text_direction = 1
+
+[node name="Joystick Fixo" type="Panel" parent="Control/Menu Config Jogabilidade/Botoes/Botoes Esquerda"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_bre5d")
+
+[node name="CheckButton" type="CheckButton" parent="Control/Menu Config Jogabilidade/Botoes/Botoes Esquerda/Joystick Fixo" groups=["Toogle"]]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 2.0
+offset_right = 393.0
+offset_bottom = 34.0
+theme_override_icons/checked = ExtResource("7_3s03j")
+theme_override_icons/unchecked = ExtResource("8_3wpav")
+text = "Joystick Fixo"
+icon_alignment = 1
+expand_icon = true
+text_direction = 1
+
+[node name="Pontuacao e Onda" type="HBoxContainer" parent="Control/Menu Config Jogabilidade/Botoes/Botoes Esquerda"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Pontuacao sem Fim" type="Panel" parent="Control/Menu Config Jogabilidade/Botoes/Botoes Esquerda/Pontuacao e Onda"]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Button" type="Button" parent="Control/Menu Config Jogabilidade/Botoes/Botoes Esquerda/Pontuacao e Onda/Pontuacao sem Fim" groups=["Toogle"]]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 2.0
+offset_right = 177.0
+offset_bottom = 35.0
+text = "Pontuacao (sem fim) "
+flat = true
+alignment = 0
+icon_alignment = 2
+
+[node name="Onda Maxima" type="Panel" parent="Control/Menu Config Jogabilidade/Botoes/Botoes Esquerda/Pontuacao e Onda"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_bre5d")
+
+[node name="Tipo de Onda" type="Button" parent="Control/Menu Config Jogabilidade/Botoes/Botoes Esquerda/Pontuacao e Onda/Onda Maxima"]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 2.0
+offset_right = 192.0
+offset_bottom = 35.0
+text = "Onda Maxima"
+icon = ExtResource("9_fv0yw")
+flat = true
+alignment = 0
+icon_alignment = 2
+script = ExtResource("10_3e81i")
+
+[node name="Ondas" type="Panel" parent="Control/Menu Config Jogabilidade/Botoes/Botoes Esquerda/Pontuacao e Onda/Onda Maxima/Tipo de Onda"]
+visible = false
+layout_mode = 2
+offset_left = -6.0
+offset_top = 33.0
+offset_right = 201.0
+offset_bottom = 124.0
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_n7ua5")
+
+[node name="Onda Maxima" type="Button" parent="Control/Menu Config Jogabilidade/Botoes/Botoes Esquerda/Pontuacao e Onda/Onda Maxima/Tipo de Onda/Ondas"]
+layout_mode = 2
+offset_left = 27.0
+offset_top = 1.0
+offset_right = 178.0
+offset_bottom = 45.0
+size_flags_vertical = 3
+text = "Onda Maxima"
+flat = true
+icon_alignment = 1
+
+[node name="Maior dificuldade" type="Button" parent="Control/Menu Config Jogabilidade/Botoes/Botoes Esquerda/Pontuacao e Onda/Onda Maxima/Tipo de Onda/Ondas"]
+layout_mode = 2
+offset_left = 25.0
+offset_top = 43.0
+offset_right = 181.0
+offset_bottom = 87.0
+size_flags_vertical = 3
+text = "Maior Dificuldade
+"
+flat = true
+icon_alignment = 1
+
+[node name="Botoes Direita" type="VBoxContainer" parent="Control/Menu Config Jogabilidade/Botoes"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 13
+metadata/_edit_group_ = true
+
+[node name="Acessibilidade" type="Button" parent="Control/Menu Config Jogabilidade/Botoes/Botoes Direita"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "Acessibilidade"
+flat = true
+
+[node name="Destaque de Personagem" type="Panel" parent="Control/Menu Config Jogabilidade/Botoes/Botoes Direita"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_bre5d")
+
+[node name="CheckButton" type="CheckButton" parent="Control/Menu Config Jogabilidade/Botoes/Botoes Direita/Destaque de Personagem" groups=["Toogle"]]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 2.0
+offset_right = 393.0
+offset_bottom = 34.0
+theme_override_icons/checked = ExtResource("7_3s03j")
+theme_override_icons/unchecked = ExtResource("8_3wpav")
+text = "Destaque de Personagem"
+icon_alignment = 1
+expand_icon = true
+text_direction = 1
+
+[node name="Destaque de Armas" type="Panel" parent="Control/Menu Config Jogabilidade/Botoes/Botoes Direita"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_bre5d")
+metadata/_edit_group_ = true
+
+[node name="CheckButton" type="CheckButton" parent="Control/Menu Config Jogabilidade/Botoes/Botoes Direita/Destaque de Armas" groups=["Toogle"]]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 2.0
+offset_right = 393.0
+offset_bottom = 34.0
+theme_override_icons/checked = ExtResource("7_3s03j")
+theme_override_icons/unchecked = ExtResource("8_3wpav")
+text = "Destaque de Armas"
+icon_alignment = 1
+expand_icon = true
+text_direction = 1
+
+[node name="Destaque de Projeteis" type="Panel" parent="Control/Menu Config Jogabilidade/Botoes/Botoes Direita"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_bre5d")
+
+[node name="CheckButton" type="CheckButton" parent="Control/Menu Config Jogabilidade/Botoes/Botoes Direita/Destaque de Projeteis" groups=["Toogle"]]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 2.0
+offset_right = 393.0
+offset_bottom = 34.0
+theme_override_icons/checked = ExtResource("7_3s03j")
+theme_override_icons/unchecked = ExtResource("8_3wpav")
+text = "Destaque de Projeteis"
+icon_alignment = 1
+expand_icon = true
+text_direction = 1
+
+[node name="Escurecimento de Tela" type="Panel" parent="Control/Menu Config Jogabilidade/Botoes/Botoes Direita"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_bre5d")
+
+[node name="CheckButton" type="CheckButton" parent="Control/Menu Config Jogabilidade/Botoes/Botoes Direita/Escurecimento de Tela" groups=["Toogle"]]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 2.0
+offset_right = 393.0
+offset_bottom = 34.0
+theme_override_icons/checked = ExtResource("7_3s03j")
+theme_override_icons/unchecked = ExtResource("8_3wpav")
+text = "Escurecimento de Tela"
+icon_alignment = 1
+expand_icon = true
+text_direction = 1
+
+[node name="Explosoes" type="Panel" parent="Control/Menu Config Jogabilidade/Botoes/Botoes Direita"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_bre5d")
+
+[node name="CheckButton" type="CheckButton" parent="Control/Menu Config Jogabilidade/Botoes/Botoes Direita/Explosoes" groups=["Toogle"]]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 2.0
+offset_right = 393.0
+offset_bottom = 34.0
+theme_override_icons/checked = ExtResource("7_3s03j")
+theme_override_icons/unchecked = ExtResource("8_3wpav")
+text = "Explosoes
+"
+icon_alignment = 1
+expand_icon = true
+text_direction = 1
+
+[node name="Menu Config Geral" type="Panel" parent="Control"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/panel = SubResource("StyleBoxFlat_uigm1")
+
+[node name="Voltar Geral" type="Button" parent="Control/Menu Config Geral"]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 24.0
+offset_right = 198.0
+offset_bottom = 81.0
+theme_override_font_sizes/font_size = 35
+text = "Voltar"
+icon = ExtResource("5_vmcsp")
+flat = true
+alignment = 2
+expand_icon = true
+
+[node name="Botoes" type="HBoxContainer" parent="Control/Menu Config Geral"]
+layout_mode = 0
+offset_left = 147.0
+offset_top = 166.0
+offset_right = 1004.0
+offset_bottom = 465.0
+theme_override_constants/separation = 19
+
+[node name="Botoes Esquerda" type="VBoxContainer" parent="Control/Menu Config Geral/Botoes"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 13
+
+[node name="Button" type="Button" parent="Control/Menu Config Geral/Botoes/Botoes Esquerda"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "Video
+
+"
+flat = true
+
+[node name="Linguagem" type="Panel" parent="Control/Menu Config Geral/Botoes/Botoes Esquerda"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_bre5d")
+
+[node name="Tipo de Linguagem" type="Button" parent="Control/Menu Config Geral/Botoes/Botoes Esquerda/Linguagem"]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 2.0
+offset_right = 415.0
+offset_bottom = 35.0
+text = "Portugues"
+icon = ExtResource("9_fv0yw")
+flat = true
+alignment = 0
+icon_alignment = 2
+script = ExtResource("10_3e81i")
+
+[node name="Tremor de Tela" type="Panel" parent="Control/Menu Config Geral/Botoes/Botoes Esquerda"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_bre5d")
+
+[node name="CheckButton" type="CheckButton" parent="Control/Menu Config Geral/Botoes/Botoes Esquerda/Tremor de Tela" groups=["Toogle"]]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 2.0
+offset_right = 393.0
+offset_bottom = 34.0
+theme_override_icons/checked = ExtResource("7_3s03j")
+theme_override_icons/unchecked = ExtResource("8_3wpav")
+text = "Tremor de Tela"
+icon_alignment = 1
+expand_icon = true
+text_direction = 1
+
+[node name="Efeitos Visuais" type="Panel" parent="Control/Menu Config Geral/Botoes/Botoes Esquerda"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_bre5d")
+
+[node name="CheckButton" type="CheckButton" parent="Control/Menu Config Geral/Botoes/Botoes Esquerda/Efeitos Visuais" groups=["Toogle"]]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 2.0
+offset_right = 393.0
+offset_bottom = 34.0
+theme_override_icons/checked = ExtResource("7_3s03j")
+theme_override_icons/unchecked = ExtResource("8_3wpav")
+text = "Efeitos Visuais"
+icon_alignment = 1
+expand_icon = true
+text_direction = 1
+
+[node name="Exibicao de Dano" type="Panel" parent="Control/Menu Config Geral/Botoes/Botoes Esquerda"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_bre5d")
+
+[node name="CheckButton" type="CheckButton" parent="Control/Menu Config Geral/Botoes/Botoes Esquerda/Exibicao de Dano" groups=["Toogle"]]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 2.0
+offset_right = 393.0
+offset_bottom = 34.0
+theme_override_icons/checked = ExtResource("7_3s03j")
+theme_override_icons/unchecked = ExtResource("8_3wpav")
+text = "Exibicao de Dano"
+icon_alignment = 1
+expand_icon = true
+text_direction = 1
+
+[node name="Botoes Direita" type="VBoxContainer" parent="Control/Menu Config Geral/Botoes"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Button" type="Button" parent="Control/Menu Config Geral/Botoes/Botoes Direita"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "Som
+
+"
+flat = true
+
+[node name="Musica e Som" type="VBoxContainer" parent="Control/Menu Config Geral/Botoes/Botoes Direita"]
+layout_mode = 2
+theme_override_constants/separation = 29
+
+[node name="Musica Box" type="HBoxContainer" parent="Control/Menu Config Geral/Botoes/Botoes Direita/Musica e Som"]
+layout_mode = 2
+
+[node name="Musica" type="Button" parent="Control/Menu Config Geral/Botoes/Botoes Direita/Musica e Som/Musica Box"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+text = "Musica    "
+flat = true
+
+[node name="Music ProgressBar" type="ProgressBar" parent="Control/Menu Config Geral/Botoes/Botoes Direita/Musica e Som/Musica Box"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+value = 80.0
+show_percentage = false
+
+[node name="Music Percent" type="ProgressBar" parent="Control/Menu Config Geral/Botoes/Botoes Direita/Musica e Som/Musica Box/Music ProgressBar"]
+layout_mode = 2
+offset_left = 284.0
+offset_right = 347.0
+offset_bottom = 43.0
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme_override_styles/background = SubResource("StyleBoxTexture_h0npt")
+theme_override_styles/fill = SubResource("StyleBoxTexture_emnuf")
+value = 80.0
+
+[node name="Music Bar" type="HScrollBar" parent="Control/Menu Config Geral/Botoes/Botoes Direita/Musica e Som/Musica Box/Music ProgressBar"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+size_flags_stretch_ratio = 6.37
+value = 80.0
+
+[node name="Som Box" type="HBoxContainer" parent="Control/Menu Config Geral/Botoes/Botoes Direita/Musica e Som"]
+layout_mode = 2
+
+[node name="Som" type="Button" parent="Control/Menu Config Geral/Botoes/Botoes Direita/Musica e Som/Som Box"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+text = "Som        "
+flat = true
+
+[node name="Sound ProgressBar" type="ProgressBar" parent="Control/Menu Config Geral/Botoes/Botoes Direita/Musica e Som/Som Box"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+value = 80.0
+show_percentage = false
+
+[node name="Sound Percent" type="ProgressBar" parent="Control/Menu Config Geral/Botoes/Botoes Direita/Musica e Som/Som Box/Sound ProgressBar"]
+layout_mode = 2
+offset_left = 284.0
+offset_right = 347.0
+offset_bottom = 43.0
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme_override_styles/background = SubResource("StyleBoxTexture_h0npt")
+theme_override_styles/fill = SubResource("StyleBoxTexture_emnuf")
+value = 80.0
+
+[node name="Sound Bar" type="HScrollBar" parent="Control/Menu Config Geral/Botoes/Botoes Direita/Musica e Som/Som Box/Sound ProgressBar"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+size_flags_stretch_ratio = 6.37
+value = 80.0
+
+[node name="Linguas" type="Panel" parent="Control/Menu Config Geral"]
+visible = false
+layout_mode = 2
+offset_left = 153.0
+offset_top = 313.0
+offset_right = 569.0
+offset_bottom = 591.0
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_n7ua5")
+metadata/_edit_group_ = true
+
+[node name="Opcao de Linguas" type="VBoxContainer" parent="Control/Menu Config Geral/Linguas"]
+layout_mode = 0
+offset_right = 412.0
+offset_bottom = 283.0
+theme_override_constants/separation = 5
+
+[node name="Portugues" type="Button" parent="Control/Menu Config Geral/Linguas/Opcao de Linguas"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 25
+text = "Portugues"
+flat = true
+icon_alignment = 1
+
+[node name="English" type="Button" parent="Control/Menu Config Geral/Linguas/Opcao de Linguas"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 25
+text = "English
+"
+flat = true
+icon_alignment = 1
+
+[node name="Francais" type="Button" parent="Control/Menu Config Geral/Linguas/Opcao de Linguas"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 25
+text = "Francais
+"
+flat = true
+icon_alignment = 1
+
+[node name="English3" type="Button" parent="Control/Menu Config Geral/Linguas/Opcao de Linguas"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 25
+text = "English
+"
+flat = true
+icon_alignment = 1
+
+[node name="English4" type="Button" parent="Control/Menu Config Geral/Linguas/Opcao de Linguas"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 25
+text = "English
+"
+flat = true
+icon_alignment = 1
+
+[node name="Polski" type="Button" parent="Control/Menu Config Geral/Linguas/Opcao de Linguas"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 25
+text = "Polski"
+flat = true
+icon_alignment = 1
+
+[node name="Music Controller" parent="." instance=ExtResource("12_n7ua5")]
+
+[connection signal="pressed" from="Control/Menu Config/X" to="." method="_on_x_pressed"]
+[connection signal="pressed" from="Control/Menu Config/Botoes Config/Geral" to="." method="_on_geral_pressed"]
+[connection signal="pressed" from="Control/Menu Config/Botoes Config/Jogabilidade" to="." method="_on_jogabilidade_pressed"]
+[connection signal="pressed" from="Control/Menu Config Jogabilidade/Voltar Jogabilidade" to="." method="_on_voltar_jogabilidade_pressed"]
+[connection signal="pressed" from="Control/Menu Config Jogabilidade/Botoes/Botoes Esquerda/Pontuacao e Onda/Onda Maxima/Tipo de Onda" to="." method="_on_tipo_de_onda_pressed"]
+[connection signal="pressed" from="Control/Menu Config Jogabilidade/Botoes/Botoes Esquerda/Pontuacao e Onda/Onda Maxima/Tipo de Onda/Ondas/Onda Maxima" to="Botao Supremo" method="_on_onda_maxima_pressed"]
+[connection signal="pressed" from="Control/Menu Config Jogabilidade/Botoes/Botoes Esquerda/Pontuacao e Onda/Onda Maxima/Tipo de Onda/Ondas/Maior dificuldade" to="Botao Supremo" method="_on_maior_dificuldade_pressed"]
+[connection signal="pressed" from="Control/Menu Config Geral/Voltar Geral" to="." method="_on_voltar_geral_pressed"]
+[connection signal="pressed" from="Control/Menu Config Geral/Botoes/Botoes Esquerda/Linguagem/Tipo de Linguagem" to="." method="_on_tipo_de_linguagem_pressed"]
+[connection signal="pressed" from="Control/Menu Config Geral/Botoes/Botoes Esquerda/Tremor de Tela/CheckButton" to="Botao Supremo" method="_on_check_button_pressed"]
+[connection signal="toggled" from="Control/Menu Config Geral/Botoes/Botoes Esquerda/Efeitos Visuais/CheckButton" to="Botao Supremo" method="_on_check_button_toggled"]
+[connection signal="value_changed" from="Control/Menu Config Geral/Botoes/Botoes Direita/Musica e Som/Musica Box/Music ProgressBar/Music Bar" to="Botao Supremo" method="_on_music_bar_value_changed"]
+[connection signal="value_changed" from="Control/Menu Config Geral/Botoes/Botoes Direita/Musica e Som/Som Box/Sound ProgressBar/Sound Bar" to="Botao Supremo" method="_on_sound_bar_value_changed"]

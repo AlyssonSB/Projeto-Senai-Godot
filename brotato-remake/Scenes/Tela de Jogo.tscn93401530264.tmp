@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=3 uid="uid://b113rkxma4k2k"]
+
+[ext_resource type="Texture2D" uid="uid://ekqlla2628fw" path="res://Images/Personagens/Redondinho.png" id="1_uvmvs"]
+[ext_resource type="Script" uid="uid://bqynaeh5o7npe" path="res://Scenes/Player.gd" id="1_yosp1"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_3g5y1"]
+radius = 41.2714
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_yosp1")
+speed = null
+
+[node name="Panel" type="Panel" parent="."]
+offset_right = 1153.0
+offset_bottom = 647.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+position = Vector2(463.25, 234.5)
+scale = Vector2(0.668421, 0.677083)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(40.4429, 33.7693)
+shape = SubResource("CircleShape2D_3g5y1")
+
+[node name="Player" type="Sprite2D" parent="CharacterBody2D/CollisionShape2D"]
+texture = ExtResource("1_uvmvs")

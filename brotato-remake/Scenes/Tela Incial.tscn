@@ -1,42 +1,61 @@
-[gd_scene load_steps=21 format=3 uid="uid://xykpjoyv1fhu"]
+[gd_scene load_steps=49 format=3 uid="uid://xykpjoyv1fhu"]
 
 [ext_resource type="Script" uid="uid://b7hqqsren51ip" path="res://Scripts/Funcoes do Menu.gd" id="1_yiqt1"]
-[ext_resource type="Texture2D" uid="uid://docv45do4coyb" path="res://Images/Tela Inicial.png" id="2_aixa6"]
+[ext_resource type="Texture2D" uid="uid://docv45do4coyb" path="res://Images/Telas/Tela Inicial.png" id="2_aixa6"]
 [ext_resource type="Script" uid="uid://deuepitqe40pt" path="res://Scripts/Telas.gd" id="3_cwhh8"]
-[ext_resource type="Texture2D" uid="uid://dbauir50i6ksn" path="res://Images/X.png" id="4_i0ttb"]
-[ext_resource type="Texture2D" uid="uid://byywp2xrba823" path="res://Images/Retangulo Cinza.png" id="5_iwm1g"]
-[ext_resource type="Texture2D" uid="uid://8tameeleqm8l" path="res://Images/setinha.png" id="6_xrjum"]
-[ext_resource type="Texture2D" uid="uid://bkf6qb2b5vlpm" path="res://Images/Retangulo Cinza 2.png" id="7_bo1vy"]
-[ext_resource type="Texture2D" uid="uid://ce23o617vektr" path="res://Images/Toogle Button Checked.png" id="8_xoli0"]
-[ext_resource type="Texture2D" uid="uid://dfoevdrpfj7ks" path="res://Images/Toogle Button Unchecked.png" id="9_h3y4y"]
-[ext_resource type="Texture2D" uid="uid://coy2d10cwu072" path="res://Images/Seta.png" id="10_yqbay"]
-[ext_resource type="Script" uid="uid://bortbefx6v43" path="res://Scenes/Botoes.gd" id="11_aixa6"]
-[ext_resource type="Texture2D" uid="uid://bqkfxipfrdd5b" path="res://Images/Retangulo Preto 2.png" id="11_xhnva"]
-[ext_resource type="Texture2D" uid="uid://cvjdbkgs3rmcb" path="res://Images/Icon Config.png" id="12_v7nyg"]
-[ext_resource type="Texture2D" uid="uid://bpgcj6kabo78g" path="res://Images/Retangulo Preto.png" id="13_ei1si"]
+[ext_resource type="PackedScene" uid="uid://6vihqkrs4aey" path="res://Scenes/Config.tscn" id="5_1jk52"]
+[ext_resource type="Texture2D" uid="uid://cbj1k6cnywmv7" path="res://Images/Telas/Login Diario.png" id="5_pkm1n"]
+[ext_resource type="Texture2D" uid="uid://cgf8irw47bvtx" path="res://Images/Telas/Totem.png" id="6_pkm1n"]
+[ext_resource type="Texture2D" uid="uid://baudiimjwyif8" path="res://Images/Telas/carta de talento 1.png" id="7_k7dui"]
+[ext_resource type="Texture2D" uid="uid://7th7jkke0m3x" path="res://Images/Telas/Carta de Talento 2.png" id="8_av3sm"]
+[ext_resource type="Texture2D" uid="uid://dansqu2i0vhmy" path="res://Images/Telas/Carta de Talento 3.png" id="9_8hte5"]
+[ext_resource type="Texture2D" uid="uid://8tameeleqm8l" path="res://Images/Icones/setinha.png" id="10_4qxo5"]
+[ext_resource type="Texture2D" uid="uid://sb6cgyynqqwq" path="res://Images/Telas/Progresso 1.png" id="10_8hte5"]
+[ext_resource type="Texture2D" uid="uid://bcu64xjv3lqda" path="res://Images/Telas/Loja1.png" id="10_tpvur"]
+[ext_resource type="Texture2D" uid="uid://bh6gqfk3adhgu" path="res://Images/Telas/Progresso 2.png" id="11_4qxo5"]
+[ext_resource type="Script" uid="uid://bortbefx6v43" path="res://Scripts/Botoes.gd" id="11_aixa6"]
+[ext_resource type="Texture2D" uid="uid://l3j8cxbw28su" path="res://Images/Telas/Loja2.png" id="11_nbgdj"]
+[ext_resource type="Texture2D" uid="uid://b7lvy38j7xttf" path="res://Images/Telas/Loja3.png" id="12_jk3ih"]
+[ext_resource type="Texture2D" uid="uid://cul6a24g30n0s" path="res://Images/Icones/icon Config.png" id="12_v7nyg"]
+[ext_resource type="Texture2D" uid="uid://bpgcj6kabo78g" path="res://Images/Design Botoes/Retangulo Preto.png" id="13_ei1si"]
+[ext_resource type="Texture2D" uid="uid://b3qvukvps565t" path="res://Images/Telas/Comunidade.png" id="13_qsg7b"]
+[ext_resource type="Texture2D" uid="uid://do51ml16af21c" path="res://Images/Telas/Loja4.png" id="13_xprew"]
+[ext_resource type="Texture2D" uid="uid://ttopvs8ktlch" path="res://Images/Telas/Loja5.png" id="14_jiomv"]
+[ext_resource type="Texture2D" uid="uid://wdsw1anrla6p" path="res://Images/Telas/Estrela Texto.png" id="14_ou122"]
+[ext_resource type="Texture2D" uid="uid://ck1xp31v2rws0" path="res://Images/Telas/trofeu Texto.png" id="15_00yxt"]
+[ext_resource type="Texture2D" uid="uid://bgn831a46raxr" path="res://Images/Icones/Icon Leave.png" id="15_qsg7b"]
+[ext_resource type="Texture2D" uid="uid://daasgmfjwho72" path="res://Images/Design Botoes/Retangulo Preto 3.png" id="16_xoli0"]
+[ext_resource type="Texture2D" uid="uid://cptw4boftgxgl" path="res://Images/Icones/Icon Note.png" id="17_qsg7b"]
+[ext_resource type="Texture2D" uid="uid://bpxkeauibd72b" path="res://Images/Icones/Icon Star.png" id="18_x5prv"]
+[ext_resource type="Texture2D" uid="uid://dl2ukmvnru2s5" path="res://Images/Design Botoes/Retangulo Preto 4.png" id="18_yqbay"]
+[ext_resource type="Texture2D" uid="uid://bygn47daewsg4" path="res://Images/Icones/Coin.png" id="19_ih6ti"]
+[ext_resource type="Texture2D" uid="uid://bmy7scag0ypdv" path="res://Images/Telas/Primeira Recompensa Tela.png" id="19_nbgdj"]
+[ext_resource type="Texture2D" uid="uid://dl8nt2td5xo6b" path="res://Images/Icones/Icon Trophy.png" id="19_ou122"]
+[ext_resource type="Texture2D" uid="uid://cjf1hgujrk46v" path="res://Images/Icones/+.png" id="20_4ognd"]
+[ext_resource type="Texture2D" uid="uid://b5hum51cv74l6" path="res://Images/Telas/Tela Vip.png" id="20_jk3ih"]
+[ext_resource type="Texture2D" uid="uid://dyfvx0vyum1fq" path="res://Images/Telas/Fundo de Crescimento Tela.png" id="21_xprew"]
+[ext_resource type="Texture2D" uid="uid://2182banmct05" path="res://Images/Telas/presente tela.png" id="22_jiomv"]
+[ext_resource type="Texture2D" uid="uid://dvlbdqx8cfy63" path="res://Images/Design Botoes/Botao Azul.png" id="22_k7dui"]
+[ext_resource type="Texture2D" uid="uid://ci8s6hhswcsjl" path="res://Images/Icones/Icon Shield.png" id="23_av3sm"]
+[ext_resource type="Texture2D" uid="uid://ce0q6gudpaodx" path="res://Images/Icones/Icon Axe's.png" id="24_8hte5"]
+[ext_resource type="Texture2D" uid="uid://c4y6bdua4qpsk" path="res://Images/Design Botoes/Botao Vermelho.png" id="25_4qxo5"]
+[ext_resource type="Texture2D" uid="uid://b1dinbhlaqc53" path="res://Images/Icones/Icon Brotato Abyssal Terrors.png" id="27_00yxt"]
+[ext_resource type="Texture2D" uid="uid://qdnek8ssc66t" path="res://Images/Icones/Primeira Recompensa.png" id="27_4qxo5"]
+[ext_resource type="Texture2D" uid="uid://cpkrerv17dwrk" path="res://Images/Icones/Vip.png" id="28_qsg7b"]
+[ext_resource type="Texture2D" uid="uid://xyweyicir7so" path="res://Images/Icones/Loja.png" id="30_b6iji"]
+[ext_resource type="Texture2D" uid="uid://ds7cioc3a718x" path="res://Images/Icones/Fundo de Crescimento.png" id="30_ou122"]
+[ext_resource type="Texture2D" uid="uid://bwis86ogwcr8k" path="res://Images/Icones/Presente.png" id="32_btld8"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ouk20"]
 texture = ExtResource("2_aixa6")
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nrnbx"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ih6ti"]
 bg_color = Color(0, 0, 0, 0.784314)
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3jcrr"]
-texture = ExtResource("7_bo1vy")
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qsg7b"]
+bg_color = Color(0.0941176, 0.0941176, 0.0941176, 1)
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_x0ao6"]
-texture = ExtResource("11_xhnva")
-texture_margin_left = 33.0
-texture_margin_right = 33.0
-texture_margin_bottom = 33.0
-
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_a8aa6"]
-texture = ExtResource("13_ei1si")
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_byewe"]
-load_path = "res://.godot/imported/Icon Notes.png-05db620a3cc1320c774f1b46c4ce8215.ctex"
-
-[node name="Telas" type="Control"]
+[node name="Menu Principal" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -45,427 +64,388 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_yiqt1")
 
-[node name="Fundo" type="Panel" parent="."]
+[node name="Botao Supremo" type="Button" parent="."]
 layout_mode = 0
-offset_right = 1280.0
-offset_bottom = 720.0
+offset_right = 8.0
+offset_bottom = 8.0
+script = ExtResource("11_aixa6")
+
+[node name="Fundo" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -32.0
+grow_horizontal = 2
+grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxTexture_ouk20")
 
 [node name="Telas" type="CanvasLayer" parent="."]
 script = ExtResource("3_cwhh8")
 
-[node name="Menu Config" type="Panel" parent="Telas"]
+[node name="Tela Login Diario" type="Panel" parent="Telas"]
 visible = false
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_styles/panel = SubResource("StyleBoxFlat_nrnbx")
+theme_override_styles/panel = SubResource("StyleBoxFlat_ih6ti")
 
-[node name="X" type="Button" parent="Telas/Menu Config"]
+[node name="LoginDiario" type="Sprite2D" parent="Telas/Tela Login Diario"]
+position = Vector2(563.5, 336.25)
+scale = Vector2(1.622, 1.615)
+texture = ExtResource("5_pkm1n")
+
+[node name="X_Login" type="Button" parent="Telas/Tela Login Diario"]
 layout_mode = 0
-offset_left = 1055.0
-offset_top = 40.0
-offset_right = 1092.0
-offset_bottom = 91.0
-theme_override_font_sizes/font_size = 35
-icon = ExtResource("4_i0ttb")
+offset_left = 891.0
+offset_top = 77.0
+offset_right = 942.0
+offset_bottom = 133.0
 flat = true
-alignment = 2
-expand_icon = true
 
-[node name="Botoes Config" type="VBoxContainer" parent="Telas/Menu Config"]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -181.0
-offset_top = -116.5
-offset_right = 181.0
-offset_bottom = 116.5
-grow_horizontal = 2
-grow_vertical = 2
-alignment = 1
-metadata/_edit_group_ = true
-
-[node name="geral" type="Button" parent="Telas/Menu Config/Botoes Config"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-text = "Geral"
-icon = ExtResource("5_iwm1g")
-flat = true
-icon_alignment = 1
-
-[node name="Jogabilidade" type="Button" parent="Telas/Menu Config/Botoes Config"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-text = "Jogabilidade"
-icon = ExtResource("5_iwm1g")
-flat = true
-icon_alignment = 1
-
-[node name="Armaz_ nuvem" type="Button" parent="Telas/Menu Config/Botoes Config"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 15
-text = "    Armazenamento em Nuvem"
-icon = ExtResource("5_iwm1g")
-flat = true
-alignment = 0
-icon_alignment = 1
-
-[node name="Datenschutz" type="Button" parent="Telas/Menu Config/Botoes Config"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-text = "Datenschutz"
-icon = ExtResource("5_iwm1g")
-flat = true
-icon_alignment = 1
-
-[node name="Menu Config Jogabilidade" type="Panel" parent="Telas"]
+[node name="Tela Totem" type="Panel" parent="Telas"]
 visible = false
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
-theme_override_styles/panel = SubResource("StyleBoxFlat_nrnbx")
+theme_override_styles/panel = SubResource("StyleBoxFlat_ih6ti")
 
-[node name="Voltar Jogabilidade" type="Button" parent="Telas/Menu Config Jogabilidade"]
+[node name="Totem" type="Sprite2D" parent="Telas/Tela Totem"]
+position = Vector2(557, 305)
+scale = Vector2(1.056, 1.052)
+texture = ExtResource("6_pkm1n")
+
+[node name="X_Totem" type="Button" parent="Telas/Tela Totem"]
 layout_mode = 0
-offset_left = 19.0
-offset_top = 24.0
-offset_right = 198.0
-offset_bottom = 81.0
-theme_override_font_sizes/font_size = 35
-text = "Voltar"
-icon = ExtResource("6_xrjum")
+offset_left = 1022.0
+offset_top = 46.0
+offset_right = 1063.0
+offset_bottom = 86.0
 flat = true
-alignment = 2
-expand_icon = true
 
-[node name="Botoes" type="HBoxContainer" parent="Telas/Menu Config Jogabilidade"]
-layout_mode = 0
-offset_left = 124.0
-offset_top = 198.0
-offset_right = 972.0
-offset_bottom = 426.0
-theme_override_constants/separation = 19
-
-[node name="Botoes Esquerda" type="VBoxContainer" parent="Telas/Menu Config Jogabilidade/Botoes"]
-layout_mode = 2
-size_flags_horizontal = 3
-theme_override_constants/separation = 13
-
-[node name="Vibracao" type="Panel" parent="Telas/Menu Config Jogabilidade/Botoes/Botoes Esquerda"]
-layout_mode = 2
-size_flags_vertical = 3
-theme_override_styles/panel = SubResource("StyleBoxTexture_3jcrr")
-
-[node name="CheckButton" type="CheckButton" parent="Telas/Menu Config Jogabilidade/Botoes/Botoes Esquerda/Vibracao"]
-layout_mode = 0
-offset_left = 1.0
-offset_top = 2.0
-offset_right = 393.0
-offset_bottom = 34.0
-theme_override_icons/checked = ExtResource("8_xoli0")
-theme_override_icons/unchecked = ExtResource("9_h3y4y")
-text = "Vibracao"
-icon_alignment = 1
-expand_icon = true
-text_direction = 1
-
-[node name="Barra PV do Personagem" type="Panel" parent="Telas/Menu Config Jogabilidade/Botoes/Botoes Esquerda"]
-layout_mode = 2
-size_flags_vertical = 3
-theme_override_styles/panel = SubResource("StyleBoxTexture_3jcrr")
-
-[node name="CheckButton" type="CheckButton" parent="Telas/Menu Config Jogabilidade/Botoes/Botoes Esquerda/Barra PV do Personagem"]
-layout_mode = 0
-offset_left = 1.0
-offset_top = 2.0
-offset_right = 393.0
-offset_bottom = 34.0
-theme_override_icons/checked = ExtResource("8_xoli0")
-theme_override_icons/unchecked = ExtResource("9_h3y4y")
-text = "Barra de PV do Personagem"
-icon_alignment = 1
-expand_icon = true
-text_direction = 1
-
-[node name="Barra de Pv nos Chefes" type="Panel" parent="Telas/Menu Config Jogabilidade/Botoes/Botoes Esquerda"]
-layout_mode = 2
-size_flags_vertical = 3
-theme_override_styles/panel = SubResource("StyleBoxTexture_3jcrr")
-
-[node name="CheckButton" type="CheckButton" parent="Telas/Menu Config Jogabilidade/Botoes/Botoes Esquerda/Barra de Pv nos Chefes"]
-layout_mode = 0
-offset_left = 1.0
-offset_top = 2.0
-offset_right = 393.0
-offset_bottom = 34.0
-theme_override_icons/checked = ExtResource("8_xoli0")
-theme_override_icons/unchecked = ExtResource("9_h3y4y")
-text = "Barra de Pv nos Chefes"
-icon_alignment = 1
-expand_icon = true
-text_direction = 1
-
-[node name="Joystick Fixo" type="Panel" parent="Telas/Menu Config Jogabilidade/Botoes/Botoes Esquerda"]
-layout_mode = 2
-size_flags_vertical = 3
-theme_override_styles/panel = SubResource("StyleBoxTexture_3jcrr")
-
-[node name="CheckButton" type="CheckButton" parent="Telas/Menu Config Jogabilidade/Botoes/Botoes Esquerda/Joystick Fixo"]
-layout_mode = 0
-offset_left = 1.0
-offset_top = 2.0
-offset_right = 393.0
-offset_bottom = 34.0
-theme_override_icons/checked = ExtResource("8_xoli0")
-theme_override_icons/unchecked = ExtResource("9_h3y4y")
-text = "Joystick Fixo"
-icon_alignment = 1
-expand_icon = true
-text_direction = 1
-
-[node name="Pontuacao e Onda" type="HBoxContainer" parent="Telas/Menu Config Jogabilidade/Botoes/Botoes Esquerda"]
-layout_mode = 2
-size_flags_vertical = 3
-
-[node name="Pontuacao sem Fim" type="Panel" parent="Telas/Menu Config Jogabilidade/Botoes/Botoes Esquerda/Pontuacao e Onda"]
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-
-[node name="Button" type="Button" parent="Telas/Menu Config Jogabilidade/Botoes/Botoes Esquerda/Pontuacao e Onda/Pontuacao sem Fim"]
-layout_mode = 0
-offset_left = 5.0
-offset_top = 2.0
-offset_right = 391.0
-offset_bottom = 35.0
-text = "Pontuacao (sem fim) "
-flat = true
-alignment = 0
-icon_alignment = 2
-
-[node name="Onda Maxima" type="Panel" parent="Telas/Menu Config Jogabilidade/Botoes/Botoes Esquerda/Pontuacao e Onda"]
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-theme_override_styles/panel = SubResource("StyleBoxTexture_3jcrr")
-
-[node name="Tipo de Onda" type="Button" parent="Telas/Menu Config Jogabilidade/Botoes/Botoes Esquerda/Pontuacao e Onda/Onda Maxima"]
-layout_mode = 0
-offset_left = 5.0
-offset_top = 2.0
-offset_right = 192.0
-offset_bottom = 35.0
-text = "Onda Maxima"
-icon = ExtResource("10_yqbay")
-flat = true
-alignment = 0
-icon_alignment = 2
-script = ExtResource("11_aixa6")
-
-[node name="Ondas" type="Panel" parent="Telas/Menu Config Jogabilidade/Botoes/Botoes Esquerda/Pontuacao e Onda/Onda Maxima/Tipo de Onda"]
-visible = false
-layout_mode = 2
-offset_left = -6.0
-offset_top = 33.0
-offset_right = 201.0
-offset_bottom = 124.0
-size_flags_vertical = 3
-theme_override_styles/panel = SubResource("StyleBoxTexture_x0ao6")
-
-[node name="Onda Maxima" type="Button" parent="Telas/Menu Config Jogabilidade/Botoes/Botoes Esquerda/Pontuacao e Onda/Onda Maxima/Tipo de Onda/Ondas"]
-layout_mode = 2
-offset_left = 27.0
-offset_top = 1.0
-offset_right = 178.0
-offset_bottom = 45.0
-size_flags_vertical = 3
-text = "Onda Maxima"
-flat = true
-icon_alignment = 1
-
-[node name="Maior dificuldade" type="Button" parent="Telas/Menu Config Jogabilidade/Botoes/Botoes Esquerda/Pontuacao e Onda/Onda Maxima/Tipo de Onda/Ondas"]
-layout_mode = 2
-offset_left = 25.0
-offset_top = 43.0
-offset_right = 181.0
-offset_bottom = 87.0
-size_flags_vertical = 3
-text = "Maior Dificuldade
-"
-flat = true
-icon_alignment = 1
-
-[node name="Botoes Direita" type="VBoxContainer" parent="Telas/Menu Config Jogabilidade/Botoes"]
-layout_mode = 2
-size_flags_horizontal = 3
-theme_override_constants/separation = 13
-metadata/_edit_group_ = true
-
-[node name="Destaque de Personagem" type="Panel" parent="Telas/Menu Config Jogabilidade/Botoes/Botoes Direita"]
-layout_mode = 2
-size_flags_vertical = 3
-theme_override_styles/panel = SubResource("StyleBoxTexture_3jcrr")
-
-[node name="CheckButton" type="CheckButton" parent="Telas/Menu Config Jogabilidade/Botoes/Botoes Direita/Destaque de Personagem"]
-layout_mode = 0
-offset_left = 1.0
-offset_top = 2.0
-offset_right = 393.0
-offset_bottom = 34.0
-theme_override_icons/checked = ExtResource("8_xoli0")
-theme_override_icons/unchecked = ExtResource("9_h3y4y")
-text = "Destaque de Personagem"
-icon_alignment = 1
-expand_icon = true
-text_direction = 1
-
-[node name="Destaque de Armas" type="Panel" parent="Telas/Menu Config Jogabilidade/Botoes/Botoes Direita"]
-layout_mode = 2
-size_flags_vertical = 3
-theme_override_styles/panel = SubResource("StyleBoxTexture_3jcrr")
-metadata/_edit_group_ = true
-
-[node name="CheckButton" type="CheckButton" parent="Telas/Menu Config Jogabilidade/Botoes/Botoes Direita/Destaque de Armas"]
-layout_mode = 0
-offset_left = 1.0
-offset_top = 2.0
-offset_right = 393.0
-offset_bottom = 34.0
-theme_override_icons/checked = ExtResource("8_xoli0")
-theme_override_icons/unchecked = ExtResource("9_h3y4y")
-text = "Destaque de Armas"
-icon_alignment = 1
-expand_icon = true
-text_direction = 1
-
-[node name="Destaque de Projeteis" type="Panel" parent="Telas/Menu Config Jogabilidade/Botoes/Botoes Direita"]
-layout_mode = 2
-size_flags_vertical = 3
-theme_override_styles/panel = SubResource("StyleBoxTexture_3jcrr")
-
-[node name="CheckButton" type="CheckButton" parent="Telas/Menu Config Jogabilidade/Botoes/Botoes Direita/Destaque de Projeteis"]
-layout_mode = 0
-offset_left = 1.0
-offset_top = 2.0
-offset_right = 393.0
-offset_bottom = 34.0
-theme_override_icons/checked = ExtResource("8_xoli0")
-theme_override_icons/unchecked = ExtResource("9_h3y4y")
-text = "Destaque de Projeteis"
-icon_alignment = 1
-expand_icon = true
-text_direction = 1
-
-[node name="Escurecimento de Tela" type="Panel" parent="Telas/Menu Config Jogabilidade/Botoes/Botoes Direita"]
-layout_mode = 2
-size_flags_vertical = 3
-theme_override_styles/panel = SubResource("StyleBoxTexture_3jcrr")
-
-[node name="CheckButton" type="CheckButton" parent="Telas/Menu Config Jogabilidade/Botoes/Botoes Direita/Escurecimento de Tela"]
-layout_mode = 0
-offset_left = 1.0
-offset_top = 2.0
-offset_right = 393.0
-offset_bottom = 34.0
-theme_override_icons/checked = ExtResource("8_xoli0")
-theme_override_icons/unchecked = ExtResource("9_h3y4y")
-text = "Escurecimento de Tela"
-icon_alignment = 1
-expand_icon = true
-text_direction = 1
-
-[node name="Explosoes" type="Panel" parent="Telas/Menu Config Jogabilidade/Botoes/Botoes Direita"]
-layout_mode = 2
-size_flags_vertical = 3
-theme_override_styles/panel = SubResource("StyleBoxTexture_3jcrr")
-
-[node name="CheckButton" type="CheckButton" parent="Telas/Menu Config Jogabilidade/Botoes/Botoes Direita/Explosoes"]
-layout_mode = 0
-offset_left = 1.0
-offset_top = 2.0
-offset_right = 393.0
-offset_bottom = 34.0
-theme_override_icons/checked = ExtResource("8_xoli0")
-theme_override_icons/unchecked = ExtResource("9_h3y4y")
-text = "Explosoes
-"
-icon_alignment = 1
-expand_icon = true
-text_direction = 1
-
-[node name="Menu Config Geral" type="Panel" parent="Telas"]
+[node name="Tela carta de talento" type="Panel" parent="Telas"]
 visible = false
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_styles/panel = SubResource("StyleBoxFlat_nrnbx")
+theme_override_styles/panel = SubResource("StyleBoxFlat_ih6ti")
 
-[node name="Voltar" type="Button" parent="Telas/Menu Config Geral"]
+[node name="CartaDeTalento1" type="Sprite2D" parent="Telas/Tela carta de talento"]
+position = Vector2(575.5, 323.5)
+scale = Vector2(1.151, 1.169)
+texture = ExtResource("7_k7dui")
+
+[node name="CartaDeTalento2" type="Sprite2D" parent="Telas/Tela carta de talento"]
+visible = false
+position = Vector2(576, 325)
+scale = Vector2(0.907668, 0.923077)
+texture = ExtResource("8_av3sm")
+
+[node name="CartaDeTalento3" type="Sprite2D" parent="Telas/Tela carta de talento"]
+visible = false
+position = Vector2(574, 324)
+scale = Vector2(0.905543, 0.912621)
+texture = ExtResource("9_8hte5")
+
+[node name="Loja" type="Button" parent="Telas/Tela carta de talento"]
 layout_mode = 0
-offset_left = 19.0
-offset_top = 24.0
-offset_right = 198.0
-offset_bottom = 81.0
-theme_override_font_sizes/font_size = 35
-text = "Voltar"
-icon = ExtResource("6_xrjum")
+offset_left = 905.0
+offset_top = -1.0
+offset_right = 1123.0
+offset_bottom = 59.0
 flat = true
-alignment = 2
-expand_icon = true
 
-[node name="Botoes Config" type="VBoxContainer" parent="Telas/Menu Config Geral"]
+[node name="Sair Carta de Talento" type="Button" parent="Telas/Tela carta de talento"]
 layout_mode = 0
-offset_left = 433.0
-offset_top = 232.0
-offset_right = 795.0
-offset_bottom = 465.0
-alignment = 1
-metadata/_edit_group_ = true
-
-[node name="geral" type="Button" parent="Telas/Menu Config Geral/Botoes Config"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-text = "Geral"
-icon = ExtResource("5_iwm1g")
+offset_left = 15.0
+offset_top = 5.0
+offset_right = 224.0
+offset_bottom = 49.0
 flat = true
-icon_alignment = 1
 
-[node name="Jogabilidade" type="Button" parent="Telas/Menu Config Geral/Botoes Config"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-text = "Jogabilidade"
-icon = ExtResource("5_iwm1g")
+[node name="BCarta de Talento 1" type="Button" parent="Telas/Tela carta de talento"]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 85.0
+offset_right = 224.0
+offset_bottom = 160.0
 flat = true
-icon_alignment = 1
 
-[node name="Armaz_ nuvem" type="Button" parent="Telas/Menu Config Geral/Botoes Config"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 15
-text = "    Armazenamento em Nuvem"
-icon = ExtResource("5_iwm1g")
+[node name="BCarta de Talento 2" type="Button" parent="Telas/Tela carta de talento"]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 172.0
+offset_right = 224.0
+offset_bottom = 247.0
+flat = true
+
+[node name="BCarta de Talento 3" type="Button" parent="Telas/Tela carta de talento"]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 257.0
+offset_right = 224.0
+offset_bottom = 330.0
+flat = true
+
+[node name="Tela Loja" type="Panel" parent="Telas"]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_ih6ti")
+
+[node name="Loja1" type="Sprite2D" parent="Telas/Tela Loja"]
+position = Vector2(582, 321)
+texture = ExtResource("10_tpvur")
+
+[node name="Loja2" type="Sprite2D" parent="Telas/Tela Loja"]
+visible = false
+position = Vector2(585, 317)
+texture = ExtResource("11_nbgdj")
+
+[node name="Loja3" type="Sprite2D" parent="Telas/Tela Loja"]
+visible = false
+position = Vector2(589, 317)
+texture = ExtResource("12_jk3ih")
+
+[node name="Loja4" type="Sprite2D" parent="Telas/Tela Loja"]
+visible = false
+position = Vector2(585, 317)
+texture = ExtResource("13_xprew")
+
+[node name="Loja5" type="Sprite2D" parent="Telas/Tela Loja"]
+visible = false
+position = Vector2(592, 229)
+texture = ExtResource("14_jiomv")
+
+[node name="X_Loja" type="Button" parent="Telas/Tela Loja"]
+layout_mode = 0
+offset_left = 980.0
+offset_top = 59.0
+offset_right = 1031.0
+offset_bottom = 107.0
+flat = true
+
+[node name="Loja Diaria" type="Button" parent="Telas/Tela Loja"]
+layout_mode = 0
+offset_left = 183.0
+offset_top = 132.0
+offset_right = 392.0
+offset_bottom = 207.0
+flat = true
+
+[node name="Pacote de Presente" type="Button" parent="Telas/Tela Loja"]
+layout_mode = 0
+offset_left = 185.0
+offset_top = 219.0
+offset_right = 394.0
+offset_bottom = 294.0
+flat = true
+
+[node name="Desbloquear Novo Personagem" type="Button" parent="Telas/Tela Loja"]
+layout_mode = 0
+offset_left = 179.0
+offset_top = 298.0
+offset_right = 388.0
+offset_bottom = 371.0
+flat = true
+
+[node name="Obter Batatas" type="Button" parent="Telas/Tela Loja"]
+layout_mode = 0
+offset_left = 183.0
+offset_top = 380.0
+offset_right = 392.0
+offset_bottom = 453.0
+flat = true
+
+[node name="materiais de totem" type="Button" parent="Telas/Tela Loja"]
+layout_mode = 0
+offset_left = 185.0
+offset_top = 464.0
+offset_right = 394.0
+offset_bottom = 537.0
+flat = true
+
+[node name="Tela Progresso" type="Panel" parent="Telas"]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_qsg7b")
+
+[node name="Sair Progresso" type="Button" parent="Telas/Tela Progresso"]
+layout_mode = 0
+offset_left = 21.0
+offset_top = 8.0
+offset_right = 229.0
+offset_bottom = 83.0
+theme_override_font_sizes/font_size = 30
+text = "Progresso"
+icon = ExtResource("10_4qxo5")
 flat = true
 alignment = 0
-icon_alignment = 1
+expand_icon = true
 
-[node name="Datenschutz" type="Button" parent="Telas/Menu Config Geral/Botoes Config"]
+[node name="ScrollContainer" type="ScrollContainer" parent="Telas/Tela Progresso"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 91.0
+offset_right = 578.0
+offset_bottom = 617.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Telas/Tela Progresso/ScrollContainer"]
 layout_mode = 2
-theme_override_font_sizes/font_size = 30
-text = "Datenschutz"
-icon = ExtResource("5_iwm1g")
+
+[node name="Progresso 1" type="Button" parent="Telas/Tela Progresso/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+icon = ExtResource("10_8hte5")
 flat = true
-icon_alignment = 1
+
+[node name="Progresso 2" type="Button" parent="Telas/Tela Progresso/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+icon = ExtResource("11_4qxo5")
+
+[node name="Mensagem Progresso" type="Button" parent="Telas/Tela Progresso"]
+layout_mode = 0
+offset_left = 612.0
+offset_top = 64.0
+offset_right = 1109.0
+offset_bottom = 585.0
+theme_override_font_sizes/font_size = 70
+text = "Nenhum
+Progresso
+Parceiro
+So 
+Regresso"
+
+[node name="Tela Comunidade" type="Panel" parent="Telas"]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_ih6ti")
+
+[node name="X_Comunidade" type="Button" parent="Telas/Tela Comunidade"]
+layout_mode = 0
+offset_left = 864.0
+offset_top = 184.0
+offset_right = 905.0
+offset_bottom = 224.0
+flat = true
+
+[node name="Comunidade" type="Sprite2D" parent="Telas/Tela Comunidade"]
+position = Vector2(560.5, 327.5)
+scale = Vector2(0.854289, 0.903683)
+texture = ExtResource("13_qsg7b")
+
+[node name="Tela Primeira Recompensa" type="Panel" parent="Telas"]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_ih6ti")
+
+[node name="PrimeiraRecompensaTela" type="Sprite2D" parent="Telas/Tela Primeira Recompensa"]
+position = Vector2(554, 313)
+texture = ExtResource("19_nbgdj")
+
+[node name="X_Primeira Recompensa" type="Button" parent="Telas/Tela Primeira Recompensa"]
+layout_mode = 0
+offset_left = 872.0
+offset_top = 59.0
+offset_right = 917.0
+offset_bottom = 103.0
+flat = true
+
+[node name="Tela Vip" type="Panel" parent="Telas"]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_ih6ti")
+
+[node name="TelaVip" type="Sprite2D" parent="Telas/Tela Vip"]
+position = Vector2(564, 323)
+texture = ExtResource("20_jk3ih")
+
+[node name="X_Vip" type="Button" parent="Telas/Tela Vip"]
+layout_mode = 0
+offset_left = 884.0
+offset_top = 71.0
+offset_right = 929.0
+offset_bottom = 115.0
+flat = true
+
+[node name="Tela Fundo de Crescimento" type="Panel" parent="Telas"]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_ih6ti")
+
+[node name="FundoDeCrescimentoTela" type="Sprite2D" parent="Telas/Tela Fundo de Crescimento"]
+position = Vector2(575.25, 308)
+scale = Vector2(1.0615, 1.051)
+texture = ExtResource("21_xprew")
+
+[node name="X_Fundo de Crescimento" type="Button" parent="Telas/Tela Fundo de Crescimento"]
+layout_mode = 0
+offset_left = 1049.0
+offset_top = 82.0
+offset_right = 1094.0
+offset_bottom = 126.0
+flat = true
+
+[node name="Tela Presente" type="Panel" parent="Telas"]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_ih6ti")
+
+[node name="PresenteTela" type="Sprite2D" parent="Telas/Tela Presente"]
+position = Vector2(576, 329)
+scale = Vector2(1.056, 1.064)
+texture = ExtResource("22_jiomv")
+
+[node name="X_Presente" type="Button" parent="Telas/Tela Presente"]
+layout_mode = 0
+offset_left = 1052.0
+offset_top = 97.0
+offset_right = 1093.0
+offset_bottom = 137.0
+flat = true
+
+[node name="EstrelaTexto" type="Sprite2D" parent="Telas"]
+visible = false
+position = Vector2(498, 105)
+texture = ExtResource("14_ou122")
+
+[node name="TrofeuTexto" type="Sprite2D" parent="Telas"]
+visible = false
+position = Vector2(392, 104)
+texture = ExtResource("15_00yxt")
 
 [node name="Buttons" type="Control" parent="."]
 anchors_preset = 0
@@ -476,8 +456,8 @@ offset_bottom = 495.0
 layout_mode = 2
 offset_left = 18.0
 offset_top = 19.0
-offset_right = 98.0
-offset_bottom = 99.0
+offset_right = 71.0
+offset_bottom = 72.0
 size_flags_horizontal = 3
 icon = ExtResource("12_v7nyg")
 flat = true
@@ -486,44 +466,305 @@ expand_icon = true
 
 [node name="Quit" type="Button" parent="Buttons"]
 layout_mode = 2
-offset_left = 106.0
-offset_top = 19.0
-offset_right = 186.0
-offset_bottom = 99.0
+offset_left = 72.0
+offset_top = 17.0
+offset_right = 136.0
+offset_bottom = 73.0
 size_flags_horizontal = 3
 theme_override_font_sizes/font_size = 20
-text = "Quit"
+icon = ExtResource("15_qsg7b")
 flat = true
 icon_alignment = 1
 expand_icon = true
 
-[node name="Note" type="Panel" parent="Buttons"]
-self_modulate = Color(0, 0, 0, 0.705882)
-layout_mode = 0
-offset_left = 27.0
-offset_top = 228.0
-offset_right = 109.0
-offset_bottom = 364.0
-theme_override_styles/panel = SubResource("StyleBoxTexture_a8aa6")
+[node name="RetanguloPreto" type="Sprite2D" parent="Buttons"]
+self_modulate = Color(1, 1, 1, 0.670588)
+position = Vector2(39.5, 299.25)
+scale = Vector2(0.884058, 0.650838)
+texture = ExtResource("13_ei1si")
 
-[node name="Note" type="Button" parent="Buttons/Note"]
-layout_mode = 2
-offset_left = 2.0
-offset_top = 18.0
-offset_right = 85.0
-offset_bottom = 120.0
+[node name="Note" type="Button" parent="Buttons/RetanguloPreto"]
+anchors_preset = -1
+anchor_left = 0.00724638
+anchor_top = 0.0027933
+anchor_right = 1.00725
+anchor_bottom = 1.00279
+offset_left = -34.5
+offset_top = -89.5
+offset_right = -34.5
+offset_bottom = -89.5
+grow_horizontal = 2
+grow_vertical = 2
 size_flags_horizontal = 3
-icon = SubResource("CompressedTexture2D_byewe")
+icon = ExtResource("17_qsg7b")
 flat = true
 icon_alignment = 1
 expand_icon = true
+metadata/_edit_use_anchors_ = true
 
-[connection signal="pressed" from="Telas/Menu Config/X" to="Telas" method="_on_x_pressed"]
-[connection signal="pressed" from="Telas/Menu Config/Botoes Config/Jogabilidade" to="Telas" method="_on_jogabilidade_pressed"]
-[connection signal="pressed" from="Telas/Menu Config Jogabilidade/Voltar Jogabilidade" to="Telas" method="_on_voltar_jogabilidade_pressed"]
-[connection signal="pressed" from="Telas/Menu Config Jogabilidade/Botoes/Botoes Esquerda/Pontuacao e Onda/Onda Maxima/Tipo de Onda" to="Telas" method="_on_tipo_de_onda_pressed"]
-[connection signal="pressed" from="Telas/Menu Config Jogabilidade/Botoes/Botoes Esquerda/Pontuacao e Onda/Onda Maxima/Tipo de Onda/Ondas/Onda Maxima" to="Telas/Menu Config Jogabilidade/Botoes/Botoes Esquerda/Pontuacao e Onda/Onda Maxima/Tipo de Onda" method="_on_onda_maxima_pressed"]
-[connection signal="pressed" from="Telas/Menu Config Jogabilidade/Botoes/Botoes Esquerda/Pontuacao e Onda/Onda Maxima/Tipo de Onda/Ondas/Maior dificuldade" to="Telas/Menu Config Jogabilidade/Botoes/Botoes Esquerda/Pontuacao e Onda/Onda Maxima/Tipo de Onda" method="_on_maior_dificuldade_pressed"]
-[connection signal="pressed" from="Telas/Menu Config Geral/Voltar" to="Telas" method="_on_button_pressed"]
+[node name="Numero de Estrelas" type="Button" parent="Buttons"]
+layout_mode = 0
+offset_left = 381.0
+offset_top = 15.0
+offset_right = 544.0
+offset_bottom = 51.0
+text = "0"
+icon = ExtResource("16_xoli0")
+flat = true
+icon_alignment = 1
+
+[node name="Estrela" type="Button" parent="Buttons/Numero de Estrelas"]
+layout_mode = 0
+offset_left = -15.0
+offset_top = -11.0
+offset_right = 30.0
+offset_bottom = 40.0
+icon = ExtResource("18_x5prv")
+flat = true
+expand_icon = true
+
+[node name="Numero de Trofeus" type="Button" parent="Buttons"]
+layout_mode = 0
+offset_left = 612.0
+offset_top = 16.0
+offset_right = 775.0
+offset_bottom = 52.0
+text = "0"
+icon = ExtResource("16_xoli0")
+flat = true
+icon_alignment = 1
+
+[node name="Trofeu" type="Button" parent="Buttons/Numero de Trofeus"]
+layout_mode = 0
+offset_left = -15.0
+offset_top = -11.0
+offset_right = 30.0
+offset_bottom = 40.0
+icon = ExtResource("19_ou122")
+flat = true
+expand_icon = true
+
+[node name="Numero de Moedas" type="Button" parent="Buttons"]
+layout_mode = 0
+offset_left = 955.0
+offset_top = 14.0
+offset_right = 1118.0
+offset_bottom = 50.0
+text = "0"
+icon = ExtResource("16_xoli0")
+flat = true
+icon_alignment = 1
+
+[node name="Moedas" type="Button" parent="Buttons/Numero de Moedas"]
+layout_mode = 0
+offset_left = -25.0
+offset_top = -11.0
+offset_right = 30.0
+offset_bottom = 50.0
+icon = ExtResource("19_ih6ti")
+flat = true
+expand_icon = true
+
+[node name="+" type="Sprite2D" parent="Buttons/Numero de Moedas"]
+position = Vector2(155, 17)
+texture = ExtResource("20_4ognd")
+
+[node name="Fundo Preto Inferior" type="Sprite2D" parent="Buttons"]
+position = Vector2(228, 600)
+texture = ExtResource("18_yqbay")
+metadata/_edit_group_ = true
+
+[node name="Menu Inferior" type="HBoxContainer" parent="Buttons/Fundo Preto Inferior"]
+offset_left = -186.0
+offset_top = -24.0
+offset_right = 179.0
+offset_bottom = 25.0
+theme_override_constants/separation = 5
+
+[node name="Totem" type="Button" parent="Buttons/Fundo Preto Inferior/Menu Inferior"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 14
+text = "Totem"
+flat = true
+
+[node name="Caixa de Talento" type="Button" parent="Buttons/Fundo Preto Inferior/Menu Inferior"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 14
+text = "Caixa de Talento"
+flat = true
+
+[node name="Progresso" type="Button" parent="Buttons/Fundo Preto Inferior/Menu Inferior"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 14
+text = "Progresso"
+flat = true
+
+[node name="Comunidade" type="Button" parent="Buttons/Fundo Preto Inferior/Menu Inferior"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 14
+text = "Comunidade"
+flat = true
+
+[node name="Classico" type="Sprite2D" parent="Buttons"]
+position = Vector2(965.5, 595.5)
+texture = ExtResource("22_k7dui")
+
+[node name="Modo Classico" type="Button" parent="Buttons/Classico"]
+offset_left = -107.0
+offset_top = -36.0
+offset_right = 109.0
+offset_bottom = 35.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = " Modo Classico"
+icon = ExtResource("23_av3sm")
+flat = true
+expand_icon = true
+
+[node name="Sobrevivencia" type="Sprite2D" parent="Buttons"]
+position = Vector2(989.5, 511.5)
+texture = ExtResource("22_k7dui")
+
+[node name="Modo Sobrevivencia" type="Button" parent="Buttons/Sobrevivencia"]
+offset_left = -111.0
+offset_top = -36.0
+offset_right = 104.0
+offset_bottom = 35.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = " Modo 
+Sobrevivencia"
+icon = ExtResource("24_8hte5")
+flat = true
+alignment = 0
+expand_icon = true
+
+[node name="Abyssal Terrors" type="Sprite2D" parent="Buttons"]
+position = Vector2(1014.5, 426.5)
+texture = ExtResource("25_4qxo5")
+
+[node name="Pegue Agora!" type="Button" parent="Buttons/Abyssal Terrors"]
+offset_left = -102.5
+offset_top = -39.5
+offset_right = 109.5
+offset_bottom = 38.5
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 17
+text = "Pegue AGORA!"
+icon = ExtResource("27_00yxt")
+flat = true
+alignment = 0
+expand_icon = true
+
+[node name="Primeira Recompensa" type="Button" parent="Buttons"]
+layout_mode = 0
+offset_left = 1034.0
+offset_top = 283.0
+offset_right = 1145.0
+offset_bottom = 371.0
+theme_override_font_sizes/font_size = 11
+icon = ExtResource("27_4qxo5")
+flat = true
+icon_alignment = 1
+vertical_icon_alignment = 0
+expand_icon = true
+
+[node name="Vip" type="Button" parent="Buttons"]
+layout_mode = 0
+offset_left = 1044.0
+offset_top = 203.0
+offset_right = 1133.0
+offset_bottom = 286.0
+theme_override_font_sizes/font_size = 15
+icon = ExtResource("28_qsg7b")
+flat = true
+icon_alignment = 1
+vertical_icon_alignment = 0
+expand_icon = true
+
+[node name="Loja" type="Button" parent="Buttons"]
+layout_mode = 0
+offset_left = 1037.0
+offset_top = 111.0
+offset_right = 1134.0
+offset_bottom = 197.0
+theme_override_font_sizes/font_size = 15
+icon = ExtResource("30_b6iji")
+flat = true
+icon_alignment = 1
+vertical_icon_alignment = 0
+expand_icon = true
+
+[node name="Fundo de Crescimento" type="Button" parent="Buttons"]
+layout_mode = 0
+offset_left = 925.0
+offset_top = 106.0
+offset_right = 1047.0
+offset_bottom = 199.0
+theme_override_font_sizes/font_size = 10
+icon = ExtResource("30_ou122")
+flat = true
+icon_alignment = 1
+vertical_icon_alignment = 0
+expand_icon = true
+
+[node name="Presente" type="Button" parent="Buttons"]
+layout_mode = 0
+offset_left = 939.0
+offset_top = 200.0
+offset_right = 1040.0
+offset_bottom = 305.0
+theme_override_font_sizes/font_size = 15
+text = "
+"
+icon = ExtResource("32_btld8")
+flat = true
+icon_alignment = 1
+vertical_icon_alignment = 0
+expand_icon = true
+
+[node name="Config" parent="." instance=ExtResource("5_1jk52")]
+
+[connection signal="ready" from="." to="." method="_on_ready"]
+[connection signal="pressed" from="Telas/Tela Login Diario/X_Login" to="Telas" method="_on_x_login_pressed"]
+[connection signal="pressed" from="Telas/Tela Totem/X_Totem" to="Telas" method="_on_x_totem_pressed"]
+[connection signal="pressed" from="Telas/Tela carta de talento/Sair Carta de Talento" to="Telas" method="_on_sair_carta_de_talento_pressed"]
+[connection signal="pressed" from="Telas/Tela carta de talento/BCarta de Talento 1" to="Telas" method="_on_b_carta_de_talento_1_pressed"]
+[connection signal="pressed" from="Telas/Tela carta de talento/BCarta de Talento 2" to="Telas" method="_on_b_carta_de_talento_2_pressed"]
+[connection signal="pressed" from="Telas/Tela carta de talento/BCarta de Talento 3" to="Telas" method="_on_b_carta_de_talento_3_pressed"]
+[connection signal="pressed" from="Telas/Tela Loja/X_Loja" to="Telas" method="_on_x_loja_pressed"]
+[connection signal="pressed" from="Telas/Tela Loja/Loja Diaria" to="Telas" method="_on_loja_diaria_pressed"]
+[connection signal="pressed" from="Telas/Tela Loja/Pacote de Presente" to="Telas" method="_on_pacote_de_presente_pressed"]
+[connection signal="pressed" from="Telas/Tela Loja/Desbloquear Novo Personagem" to="Telas" method="_on_desbloquear_novo_personagem_pressed"]
+[connection signal="pressed" from="Telas/Tela Loja/Obter Batatas" to="Telas" method="_on_obter_batatas_pressed"]
+[connection signal="pressed" from="Telas/Tela Loja/materiais de totem" to="Telas" method="_on_materiais_de_totem_pressed"]
+[connection signal="pressed" from="Telas/Tela Progresso/Sair Progresso" to="Telas" method="_on_sair_progresso_pressed"]
+[connection signal="pressed" from="Telas/Tela Comunidade/X_Comunidade" to="Telas" method="_on_x_comunidade_pressed"]
+[connection signal="pressed" from="Telas/Tela Primeira Recompensa/X_Primeira Recompensa" to="Telas" method="_on_x_primeira_recompensa_pressed"]
+[connection signal="pressed" from="Telas/Tela Vip/X_Vip" to="Telas" method="_on_x_vip_pressed"]
+[connection signal="pressed" from="Telas/Tela Fundo de Crescimento/X_Fundo de Crescimento" to="Telas" method="_on_x_fundo_de_crescimento_pressed"]
+[connection signal="pressed" from="Telas/Tela Presente/X_Presente" to="Telas" method="_on_x_presente_pressed"]
 [connection signal="pressed" from="Buttons/Config" to="Telas" method="_on_config_pressed"]
 [connection signal="pressed" from="Buttons/Quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="Buttons/RetanguloPreto/Note" to="Telas" method="_on_note_pressed"]
+[connection signal="focus_entered" from="Buttons/Numero de Estrelas/Estrela" to="Telas" method="_on_estrela_focus_entered"]
+[connection signal="focus_exited" from="Buttons/Numero de Estrelas/Estrela" to="Telas" method="_on_estrela_focus_exited"]
+[connection signal="focus_entered" from="Buttons/Numero de Trofeus/Trofeu" to="Telas" method="_on_trofeu_focus_entered"]
+[connection signal="focus_exited" from="Buttons/Numero de Trofeus/Trofeu" to="Telas" method="_on_trofeu_focus_exited"]
+[connection signal="pressed" from="Buttons/Numero de Moedas" to="Telas" method="_on_numero_de_moedas_pressed"]
+[connection signal="pressed" from="Buttons/Numero de Moedas/Moedas" to="Telas" method="_on_moedas_pressed"]
+[connection signal="pressed" from="Buttons/Fundo Preto Inferior/Menu Inferior/Totem" to="Telas" method="_on_totem_pressed"]
+[connection signal="pressed" from="Buttons/Fundo Preto Inferior/Menu Inferior/Caixa de Talento" to="Telas" method="_on_caixa_de_talento_pressed"]
+[connection signal="pressed" from="Buttons/Fundo Preto Inferior/Menu Inferior/Progresso" to="Telas" method="_on_progresso_pressed"]
+[connection signal="pressed" from="Buttons/Fundo Preto Inferior/Menu Inferior/Comunidade" to="Telas" method="_on_comunidade_pressed"]
+[connection signal="pressed" from="Buttons/Classico/Modo Classico" to="Telas" method="_on_modo_classico_pressed"]
+[connection signal="pressed" from="Buttons/Sobrevivencia/Modo Sobrevivencia" to="Telas" method="_on_modo_sobrevivencia_pressed"]
+[connection signal="pressed" from="Buttons/Primeira Recompensa" to="Telas" method="_on_primeira_recompensa_pressed"]
+[connection signal="pressed" from="Buttons/Vip" to="Telas" method="_on_vip_pressed"]
+[connection signal="pressed" from="Buttons/Loja" to="Telas" method="_on_loja_pressed"]
+[connection signal="pressed" from="Buttons/Fundo de Crescimento" to="Telas" method="_on_fundo_de_crescimento_pressed"]
+[connection signal="pressed" from="Buttons/Presente" to="Telas" method="_on_presente_pressed"]

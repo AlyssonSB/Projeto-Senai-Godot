@@ -1,0 +1,313 @@
+[gd_scene load_steps=23 format=3 uid="uid://b113rkxma4k2k"]
+
+[ext_resource type="Texture2D" uid="uid://da7mn1euech3y" path="res://Images/Telas/Fundo de Grama.png" id="1_q5p73"]
+[ext_resource type="Texture2D" uid="uid://ekqlla2628fw" path="res://Images/Personagens/Redondinho.png" id="1_uvmvs"]
+[ext_resource type="Script" uid="uid://deuepitqe40pt" path="res://Scripts/Telas.gd" id="1_vu5v2"]
+[ext_resource type="Script" uid="uid://bqynaeh5o7npe" path="res://Scripts/Player.gd" id="1_yosp1"]
+[ext_resource type="Texture2D" uid="uid://deu8bdf5iwhdo" path="res://Images/Telas/Atributos primario.png" id="2_nacvj"]
+[ext_resource type="Texture2D" uid="uid://blxrqhx5yvned" path="res://Images/Icones/Vida.png" id="3_6f55w"]
+[ext_resource type="Texture2D" uid="uid://ckgh5vxwm565l" path="res://Images/Telas/Atributos Secundario.png" id="3_ecqpg"]
+[ext_resource type="Texture2D" uid="uid://m71mv214ha8k" path="res://Images/Design Botoes/retangulo Cinza 3.png" id="4_diwyr"]
+[ext_resource type="Texture2D" uid="uid://doaemmvmkof0r" path="res://Images/Icones/Icon Pause.png" id="4_urx85"]
+[ext_resource type="Texture2D" uid="uid://byywp2xrba823" path="res://Images/Design Botoes/Retangulo Cinza.png" id="5_5ec1i"]
+[ext_resource type="Texture2D" uid="uid://c5nbmlewtiv33" path="res://Images/Telas/Level.png" id="5_8gc3d"]
+[ext_resource type="Texture2D" uid="uid://bkubdvwhpm4dd" path="res://Images/Icones/Icon Green Coin.png" id="7_pycqt"]
+[ext_resource type="Texture2D" uid="uid://mc42n2d3o2a5" path="res://Images/Icones/Icon Green bag.png" id="8_63gko"]
+[ext_resource type="Script" uid="uid://bortbefx6v43" path="res://Scripts/Botoes.gd" id="13_ihcs3"]
+[ext_resource type="PackedScene" uid="uid://6vihqkrs4aey" path="res://Scenes/Config.tscn" id="15_a8vsv"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_t8qf4"]
+bg_color = Color(0, 0, 0, 0.784314)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_xc6eg"]
+texture = ExtResource("1_q5p73")
+axis_stretch_horizontal = 2
+axis_stretch_vertical = 2
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_3g5y1"]
+radius = 41.2714
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_q5p73"]
+texture = ExtResource("3_6f55w")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_pycqt"]
+texture = ExtResource("5_8gc3d")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_63gko"]
+size = Vector2(20, 662)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xc6eg"]
+size = Vector2(1190, 20)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Botao Supremo" type="Button" parent="."]
+offset_right = 8.0
+offset_bottom = 8.0
+script = ExtResource("13_ihcs3")
+
+[node name="Telas" type="CanvasLayer" parent="."]
+script = ExtResource("1_vu5v2")
+
+[node name="Menu Pause" type="Panel" parent="Telas"]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_t8qf4")
+
+[node name="Botoes Pause" type="VBoxContainer" parent="Telas/Menu Pause"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 220.0
+offset_top = -119.0
+offset_right = 623.0
+offset_bottom = 306.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = -9
+alignment = 1
+
+[node name="Proximo Pause" type="Button" parent="Telas/Menu Pause/Botoes Pause"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 20
+text = "Proximo"
+icon = ExtResource("4_diwyr")
+flat = true
+icon_alignment = 1
+expand_icon = true
+
+[node name="Voltar ao Menu Principal" type="Button" parent="Telas/Menu Pause/Botoes Pause"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 20
+text = "Voltar ao Menu Principal"
+icon = ExtResource("4_diwyr")
+flat = true
+icon_alignment = 1
+expand_icon = true
+
+[node name="Opcoes" type="Button" parent="Telas/Menu Pause/Botoes Pause"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 20
+text = "Opcoes"
+icon = ExtResource("4_diwyr")
+flat = true
+icon_alignment = 1
+expand_icon = true
+
+[node name="Reiniciar" type="Button" parent="Telas/Menu Pause/Botoes Pause"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 20
+text = "Reiniciar"
+icon = ExtResource("4_diwyr")
+flat = true
+icon_alignment = 1
+expand_icon = true
+
+[node name="Tela Primario" type="Sprite2D" parent="Telas/Menu Pause/Botoes Pause"]
+position = Vector2(-634.875, 124.375)
+scale = Vector2(0.851078, 0.843872)
+texture = ExtResource("2_nacvj")
+
+[node name="Secundario" type="Button" parent="Telas/Menu Pause/Botoes Pause/Tela Primario"]
+offset_left = 13.0
+offset_top = -316.0
+offset_right = 167.0
+offset_bottom = -267.0
+flat = true
+
+[node name="Tela Secundario" type="Sprite2D" parent="Telas/Menu Pause/Botoes Pause"]
+visible = false
+position = Vector2(-635.25, 123.75)
+scale = Vector2(0.912607, 0.909537)
+texture = ExtResource("3_ecqpg")
+
+[node name="Primario" type="Button" parent="Telas/Menu Pause/Botoes Pause/Tela Secundario"]
+offset_left = -144.0
+offset_top = -290.0
+offset_right = 6.0
+offset_bottom = -252.0
+
+[node name="Menu Confirmar" type="Panel" parent="Telas"]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_t8qf4")
+
+[node name="Botoes Confirmar" type="VBoxContainer" parent="Telas/Menu Confirmar"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -278.0
+offset_top = -142.0
+offset_right = 293.0
+offset_bottom = 186.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+metadata/_edit_group_ = true
+
+[node name="Voltar ao Menu Principal?" type="Button" parent="Telas/Menu Confirmar/Botoes Confirmar"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 44
+text = "Voltar ao Menu Principal?"
+flat = true
+icon_alignment = 1
+
+[node name="Sim" type="Button" parent="Telas/Menu Confirmar/Botoes Confirmar"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 44
+text = "Sim"
+icon = ExtResource("5_5ec1i")
+flat = true
+icon_alignment = 1
+expand_icon = true
+
+[node name="Nao" type="Button" parent="Telas/Menu Confirmar/Botoes Confirmar"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 44
+text = "Nao"
+icon = ExtResource("5_5ec1i")
+flat = true
+icon_alignment = 1
+expand_icon = true
+
+[node name="Fundo" type="Panel" parent="."]
+offset_left = -516.0
+offset_top = -235.0
+offset_right = 637.0
+offset_bottom = 412.0
+scale = Vector2(2, 2)
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_xc6eg")
+metadata/_edit_lock_ = true
+
+[node name="Player" type="CharacterBody2D" parent="."]
+position = Vector2(586, 315)
+scale = Vector2(0.668421, 0.677083)
+floor_constant_speed = true
+script = ExtResource("1_yosp1")
+
+[node name="Player Icon" type="Sprite2D" parent="Player"]
+position = Vector2(40.4429, 33.7693)
+texture = ExtResource("1_uvmvs")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
+position = Vector2(40.4429, 33.7693)
+shape = SubResource("CircleShape2D_3g5y1")
+
+[node name="camera" type="Camera2D" parent="Player"]
+position = Vector2(44.5079, 31.7539)
+zoom = Vector2(2, 2)
+process_callback = 0
+editor_draw_limits = true
+
+[node name="Vida" type="Panel" parent="Player/camera"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -408.0
+offset_top = -213.0
+offset_right = -239.0
+offset_bottom = -188.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_q5p73")
+
+[node name="pause" type="Button" parent="Player/camera"]
+offset_left = 339.0
+offset_top = -219.0
+offset_right = 408.0
+offset_bottom = -151.0
+icon = ExtResource("4_urx85")
+
+[node name="Level" type="Panel" parent="Player/camera"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -408.0
+offset_top = -181.0
+offset_right = -239.0
+offset_bottom = -157.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_pycqt")
+
+[node name="Green coin" type="Button" parent="Player/camera"]
+offset_left = -407.0
+offset_top = -150.0
+offset_right = -354.0
+offset_bottom = -103.0
+text = "0"
+icon = ExtResource("7_pycqt")
+flat = true
+alignment = 2
+expand_icon = true
+
+[node name="Green Bag" type="Button" parent="Player/camera"]
+offset_left = -406.555
+offset_top = -114.462
+offset_right = -353.555
+offset_bottom = -67.4616
+text = "0"
+icon = ExtResource("8_63gko")
+flat = true
+alignment = 2
+expand_icon = true
+
+[node name="Limites" type="Panel" parent="."]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = -6.10352e-05
+offset_top = -3.05176e-05
+offset_right = 39.9999
+offset_bottom = 40.0
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="Limites"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Limites/StaticBody2D2"]
+position = Vector2(0, 321)
+shape = SubResource("RectangleShape2D_63gko")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Limites/StaticBody2D2"]
+position = Vector2(1161, 330)
+shape = SubResource("RectangleShape2D_63gko")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Limites/StaticBody2D2"]
+position = Vector2(585, 0)
+shape = SubResource("RectangleShape2D_xc6eg")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Limites/StaticBody2D2"]
+position = Vector2(588, 653)
+shape = SubResource("RectangleShape2D_xc6eg")
+
+[node name="Config" parent="." instance=ExtResource("15_a8vsv")]
+
+[connection signal="pressed" from="Telas/Menu Pause/Botoes Pause/Proximo Pause" to="Telas" method="_on_proximo_pause_pressed"]
+[connection signal="pressed" from="Telas/Menu Pause/Botoes Pause/Voltar ao Menu Principal" to="Telas" method="_on_voltar_ao_menu_principal_pressed"]
+[connection signal="pressed" from="Telas/Menu Pause/Botoes Pause/Opcoes" to="Telas" method="_on_opcoes_pressed"]
+[connection signal="pressed" from="Telas/Menu Pause/Botoes Pause/Reiniciar" to="Telas" method="_on_reiniciar_pressed"]
+[connection signal="pressed" from="Telas/Menu Pause/Botoes Pause/Tela Primario/Secundario" to="Telas" method="_on_secundario_pressed"]
+[connection signal="pressed" from="Telas/Menu Pause/Botoes Pause/Tela Secundario/Primario" to="Telas" method="_on_primario_pressed"]
+[connection signal="pressed" from="Telas/Menu Confirmar/Botoes Confirmar/Sim" to="Telas" method="_on_sim_pressed"]
+[connection signal="pressed" from="Telas/Menu Confirmar/Botoes Confirmar/Nao" to="Telas" method="_on_nao_pressed"]
+[connection signal="pressed" from="Player/camera/pause" to="Telas" method="_on_pause_pressed"]
