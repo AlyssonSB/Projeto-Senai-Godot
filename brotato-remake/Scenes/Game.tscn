@@ -98,52 +98,52 @@ custom_minimum_size = Vector2(980, 80)
 layout_mode = 2
 theme_override_constants/separation = 12
 
-[node name="BAleatorio" type="Button" parent="ScrollContainer/Personagens na Horizontal"]
+[node name="BInfo" type="Button" parent="ScrollContainer/Personagens na Horizontal" groups=["Click"]]
 layout_mode = 2
 icon = ExtResource("12_rajel")
 flat = true
 
-[node name="BRedondinho" type="Button" parent="ScrollContainer/Personagens na Horizontal"]
+[node name="BRedondinho" type="Button" parent="ScrollContainer/Personagens na Horizontal" groups=["Click"]]
 layout_mode = 2
 icon = ExtResource("12_3so38")
 flat = true
 
-[node name="BBrigao" type="Button" parent="ScrollContainer/Personagens na Horizontal"]
+[node name="BBrigao" type="Button" parent="ScrollContainer/Personagens na Horizontal" groups=["Click"]]
 layout_mode = 2
 icon = ExtResource("14_vvhu1")
 flat = true
 
-[node name="BLouco" type="Button" parent="ScrollContainer/Personagens na Horizontal"]
+[node name="BLouco" type="Button" parent="ScrollContainer/Personagens na Horizontal" groups=["Click"]]
 layout_mode = 2
 icon = ExtResource("15_lbihj")
 flat = true
 
-[node name="BPatrulheiro" type="Button" parent="ScrollContainer/Personagens na Horizontal"]
+[node name="BPatrulheiro" type="Button" parent="ScrollContainer/Personagens na Horizontal" groups=["Click"]]
 layout_mode = 2
 icon = ExtResource("16_raj38")
 flat = true
 
-[node name="BMago" type="Button" parent="ScrollContainer/Personagens na Horizontal"]
+[node name="BMago" type="Button" parent="ScrollContainer/Personagens na Horizontal" groups=["Click"]]
 layout_mode = 2
 icon = ExtResource("17_8e0uq")
 flat = true
 
-[node name="BRobusto" type="Button" parent="ScrollContainer/Personagens na Horizontal"]
+[node name="BRobusto" type="Button" parent="ScrollContainer/Personagens na Horizontal" groups=["Click"]]
 layout_mode = 2
 icon = ExtResource("18_i0vto")
 flat = true
 
-[node name="BIdoso" type="Button" parent="ScrollContainer/Personagens na Horizontal"]
+[node name="BIdoso" type="Button" parent="ScrollContainer/Personagens na Horizontal" groups=["Click"]]
 layout_mode = 2
 icon = ExtResource("19_3jf1l")
 flat = true
 
-[node name="BSortudo" type="Button" parent="ScrollContainer/Personagens na Horizontal"]
+[node name="BSortudo" type="Button" parent="ScrollContainer/Personagens na Horizontal" groups=["Click"]]
 layout_mode = 2
 icon = ExtResource("20_356ba")
 flat = true
 
-[node name="BMutante" type="Button" parent="ScrollContainer/Personagens na Horizontal"]
+[node name="BMutante" type="Button" parent="ScrollContainer/Personagens na Horizontal" groups=["Click"]]
 layout_mode = 2
 icon = ExtResource("21_i4lct")
 flat = true
@@ -216,7 +216,7 @@ layout_mode = 2
 size_flags_horizontal = 3
 theme_override_styles/panel = SubResource("StyleBoxTexture_iyesh")
 
-[node name="Proximo" type="Button" parent="."]
+[node name="Proximo" type="Button" parent="." groups=["Click"]]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.741319
@@ -237,7 +237,7 @@ icon_alignment = 1
 expand_icon = true
 metadata/_edit_use_anchors_ = true
 
-[node name="Voltar Selecao Personagem" type="Button" parent="."]
+[node name="Voltar Selecao Personagem" type="Button" parent="." groups=["Click"]]
 layout_mode = 0
 offset_left = 15.0
 offset_top = 17.0
@@ -258,10 +258,22 @@ offset_top = 488.0
 offset_right = 1172.0
 offset_bottom = 499.0
 
+[node name="Mensagem" type="Button" parent="."]
+layout_mode = 0
+offset_left = 681.0
+offset_top = 63.0
+offset_right = 1066.0
+offset_bottom = 429.0
+theme_override_font_sizes/font_size = 50
+text = "Na real 
+tu nao 
+escolhe nada "
+flat = true
+
 [node name="Music Controller" parent="." instance=ExtResource("24_raj38")]
 
-[connection signal="focus_entered" from="ScrollContainer/Personagens na Horizontal/BAleatorio" to="Telas" method="_on_b_aleatorio_focus_entered"]
-[connection signal="focus_exited" from="ScrollContainer/Personagens na Horizontal/BAleatorio" to="Telas" method="_on_b_aleatorio_focus_exited"]
+[connection signal="focus_entered" from="ScrollContainer/Personagens na Horizontal/BInfo" to="Telas" method="_on_b_info_focus_entered"]
+[connection signal="focus_exited" from="ScrollContainer/Personagens na Horizontal/BInfo" to="Telas" method="_on_b_info_focus_exited"]
 [connection signal="focus_entered" from="ScrollContainer/Personagens na Horizontal/BRedondinho" to="Telas" method="_on_b_redondinho_focus_entered"]
 [connection signal="focus_exited" from="ScrollContainer/Personagens na Horizontal/BRedondinho" to="Telas" method="_on_b_redondinho_focus_exited"]
 [connection signal="focus_entered" from="ScrollContainer/Personagens na Horizontal/BBrigao" to="Telas" method="_on_b_brigao_focus_entered"]

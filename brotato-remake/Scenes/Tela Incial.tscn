@@ -97,7 +97,7 @@ position = Vector2(563.5, 336.25)
 scale = Vector2(1.622, 1.615)
 texture = ExtResource("5_pkm1n")
 
-[node name="X_Login" type="Button" parent="Telas/Tela Login Diario"]
+[node name="X_Login" type="Button" parent="Telas/Tela Login Diario" groups=["Click"]]
 layout_mode = 0
 offset_left = 891.0
 offset_top = 77.0
@@ -119,7 +119,7 @@ position = Vector2(557, 305)
 scale = Vector2(1.056, 1.052)
 texture = ExtResource("6_pkm1n")
 
-[node name="X_Totem" type="Button" parent="Telas/Tela Totem"]
+[node name="X_Totem" type="Button" parent="Telas/Tela Totem" groups=["Click"]]
 layout_mode = 0
 offset_left = 1022.0
 offset_top = 46.0
@@ -153,7 +153,7 @@ position = Vector2(574, 324)
 scale = Vector2(0.905543, 0.912621)
 texture = ExtResource("9_8hte5")
 
-[node name="Loja" type="Button" parent="Telas/Tela carta de talento"]
+[node name="Loja" type="Button" parent="Telas/Tela carta de talento" groups=["Click"]]
 layout_mode = 0
 offset_left = 905.0
 offset_top = -1.0
@@ -161,7 +161,7 @@ offset_right = 1123.0
 offset_bottom = 59.0
 flat = true
 
-[node name="Sair Carta de Talento" type="Button" parent="Telas/Tela carta de talento"]
+[node name="Sair Carta de Talento" type="Button" parent="Telas/Tela carta de talento" groups=["Click"]]
 layout_mode = 0
 offset_left = 15.0
 offset_top = 5.0
@@ -169,7 +169,7 @@ offset_right = 224.0
 offset_bottom = 49.0
 flat = true
 
-[node name="BCarta de Talento 1" type="Button" parent="Telas/Tela carta de talento"]
+[node name="BCarta de Talento 1" type="Button" parent="Telas/Tela carta de talento" groups=["Click"]]
 layout_mode = 0
 offset_left = 15.0
 offset_top = 85.0
@@ -177,7 +177,7 @@ offset_right = 224.0
 offset_bottom = 160.0
 flat = true
 
-[node name="BCarta de Talento 2" type="Button" parent="Telas/Tela carta de talento"]
+[node name="BCarta de Talento 2" type="Button" parent="Telas/Tela carta de talento" groups=["Click"]]
 layout_mode = 0
 offset_left = 15.0
 offset_top = 172.0
@@ -185,13 +185,22 @@ offset_right = 224.0
 offset_bottom = 247.0
 flat = true
 
-[node name="BCarta de Talento 3" type="Button" parent="Telas/Tela carta de talento"]
+[node name="BCarta de Talento 3" type="Button" parent="Telas/Tela carta de talento" groups=["Click"]]
 layout_mode = 0
 offset_left = 15.0
 offset_top = 257.0
 offset_right = 224.0
 offset_bottom = 330.0
 flat = true
+
+[node name="Numero de Moedas" type="Button" parent="Telas/Tela carta de talento" groups=["Click"]]
+layout_mode = 0
+offset_left = 924.0
+offset_top = 7.0
+offset_right = 1118.0
+offset_bottom = 50.0
+flat = true
+icon_alignment = 1
 
 [node name="Tela Loja" type="Panel" parent="Telas"]
 visible = false
@@ -226,7 +235,7 @@ visible = false
 position = Vector2(592, 229)
 texture = ExtResource("14_jiomv")
 
-[node name="X_Loja" type="Button" parent="Telas/Tela Loja"]
+[node name="X_Loja" type="Button" parent="Telas/Tela Loja" groups=["Click"]]
 layout_mode = 0
 offset_left = 980.0
 offset_top = 59.0
@@ -234,7 +243,7 @@ offset_right = 1031.0
 offset_bottom = 107.0
 flat = true
 
-[node name="Loja Diaria" type="Button" parent="Telas/Tela Loja"]
+[node name="Loja Diaria" type="Button" parent="Telas/Tela Loja" groups=["Click"]]
 layout_mode = 0
 offset_left = 183.0
 offset_top = 132.0
@@ -242,7 +251,7 @@ offset_right = 392.0
 offset_bottom = 207.0
 flat = true
 
-[node name="Pacote de Presente" type="Button" parent="Telas/Tela Loja"]
+[node name="Pacote de Presente" type="Button" parent="Telas/Tela Loja" groups=["Click"]]
 layout_mode = 0
 offset_left = 185.0
 offset_top = 219.0
@@ -250,7 +259,7 @@ offset_right = 394.0
 offset_bottom = 294.0
 flat = true
 
-[node name="Desbloquear Novo Personagem" type="Button" parent="Telas/Tela Loja"]
+[node name="Desbloquear Novo Personagem" type="Button" parent="Telas/Tela Loja" groups=["Click"]]
 layout_mode = 0
 offset_left = 179.0
 offset_top = 298.0
@@ -258,7 +267,7 @@ offset_right = 388.0
 offset_bottom = 371.0
 flat = true
 
-[node name="Obter Batatas" type="Button" parent="Telas/Tela Loja"]
+[node name="Obter Batatas" type="Button" parent="Telas/Tela Loja" groups=["Click"]]
 layout_mode = 0
 offset_left = 183.0
 offset_top = 380.0
@@ -266,7 +275,7 @@ offset_right = 392.0
 offset_bottom = 453.0
 flat = true
 
-[node name="materiais de totem" type="Button" parent="Telas/Tela Loja"]
+[node name="materiais de totem" type="Button" parent="Telas/Tela Loja" groups=["Click"]]
 layout_mode = 0
 offset_left = 185.0
 offset_top = 464.0
@@ -283,7 +292,7 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_qsg7b")
 
-[node name="Sair Progresso" type="Button" parent="Telas/Tela Progresso"]
+[node name="Sair Progresso" type="Button" parent="Telas/Tela Progresso" groups=["Click"]]
 layout_mode = 0
 offset_left = 21.0
 offset_top = 8.0
@@ -338,7 +347,7 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_ih6ti")
 
-[node name="X_Comunidade" type="Button" parent="Telas/Tela Comunidade"]
+[node name="X_Comunidade" type="Button" parent="Telas/Tela Comunidade" groups=["Click"]]
 layout_mode = 0
 offset_left = 864.0
 offset_top = 184.0
@@ -350,6 +359,42 @@ flat = true
 position = Vector2(560.5, 327.5)
 scale = Vector2(0.854289, 0.903683)
 texture = ExtResource("13_qsg7b")
+
+[node name="Youtube" type="LinkButton" parent="Telas/Tela Comunidade" groups=["Click"]]
+layout_mode = 0
+offset_left = 726.0
+offset_top = 248.0
+offset_right = 758.0
+offset_bottom = 285.0
+scale = Vector2(3.28636, 4.15464)
+uri = "https://www.youtube.com/@blobfish_games"
+
+[node name="TikTok" type="LinkButton" parent="Telas/Tela Comunidade" groups=["Click"]]
+layout_mode = 0
+offset_left = 580.0
+offset_top = 250.0
+offset_right = 612.0
+offset_bottom = 287.0
+scale = Vector2(3.28636, 4.15464)
+uri = "https://www.tiktok.com/pt-BR/"
+
+[node name="FaceBook" type="LinkButton" parent="Telas/Tela Comunidade" groups=["Click"]]
+layout_mode = 0
+offset_left = 434.0
+offset_top = 250.0
+offset_right = 466.0
+offset_bottom = 287.0
+scale = Vector2(3.28636, 4.15464)
+uri = "https://www.facebook.com/"
+
+[node name="Discord" type="LinkButton" parent="Telas/Tela Comunidade" groups=["Click"]]
+layout_mode = 0
+offset_left = 288.0
+offset_top = 250.0
+offset_right = 320.0
+offset_bottom = 287.0
+scale = Vector2(3.28636, 4.15464)
+uri = "https://discord.gg/j39jE6k"
 
 [node name="Tela Primeira Recompensa" type="Panel" parent="Telas"]
 visible = false
@@ -364,7 +409,7 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_ih6ti")
 position = Vector2(554, 313)
 texture = ExtResource("19_nbgdj")
 
-[node name="X_Primeira Recompensa" type="Button" parent="Telas/Tela Primeira Recompensa"]
+[node name="X_Primeira Recompensa" type="Button" parent="Telas/Tela Primeira Recompensa" groups=["Click"]]
 layout_mode = 0
 offset_left = 872.0
 offset_top = 59.0
@@ -385,7 +430,7 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_ih6ti")
 position = Vector2(564, 323)
 texture = ExtResource("20_jk3ih")
 
-[node name="X_Vip" type="Button" parent="Telas/Tela Vip"]
+[node name="X_Vip" type="Button" parent="Telas/Tela Vip" groups=["Click"]]
 layout_mode = 0
 offset_left = 884.0
 offset_top = 71.0
@@ -407,7 +452,7 @@ position = Vector2(575.25, 308)
 scale = Vector2(1.0615, 1.051)
 texture = ExtResource("21_xprew")
 
-[node name="X_Fundo de Crescimento" type="Button" parent="Telas/Tela Fundo de Crescimento"]
+[node name="X_Fundo de Crescimento" type="Button" parent="Telas/Tela Fundo de Crescimento" groups=["Click"]]
 layout_mode = 0
 offset_left = 1049.0
 offset_top = 82.0
@@ -429,7 +474,7 @@ position = Vector2(576, 329)
 scale = Vector2(1.056, 1.064)
 texture = ExtResource("22_jiomv")
 
-[node name="X_Presente" type="Button" parent="Telas/Tela Presente"]
+[node name="X_Presente" type="Button" parent="Telas/Tela Presente" groups=["Click"]]
 layout_mode = 0
 offset_left = 1052.0
 offset_top = 97.0
@@ -452,7 +497,7 @@ anchors_preset = 0
 offset_right = 329.0
 offset_bottom = 495.0
 
-[node name="Config" type="Button" parent="Buttons"]
+[node name="Config" type="Button" parent="Buttons" groups=["Click"]]
 layout_mode = 2
 offset_left = 18.0
 offset_top = 19.0
@@ -464,7 +509,7 @@ flat = true
 icon_alignment = 1
 expand_icon = true
 
-[node name="Quit" type="Button" parent="Buttons"]
+[node name="Quit" type="Button" parent="Buttons" groups=["Click"]]
 layout_mode = 2
 offset_left = 72.0
 offset_top = 17.0
@@ -483,7 +528,7 @@ position = Vector2(39.5, 299.25)
 scale = Vector2(0.884058, 0.650838)
 texture = ExtResource("13_ei1si")
 
-[node name="Note" type="Button" parent="Buttons/RetanguloPreto"]
+[node name="Note" type="Button" parent="Buttons/RetanguloPreto" groups=["Click"]]
 anchors_preset = -1
 anchor_left = 0.00724638
 anchor_top = 0.0027933
@@ -502,7 +547,7 @@ icon_alignment = 1
 expand_icon = true
 metadata/_edit_use_anchors_ = true
 
-[node name="Numero de Estrelas" type="Button" parent="Buttons"]
+[node name="Numero de Estrelas" type="Button" parent="Buttons" groups=["Click"]]
 layout_mode = 0
 offset_left = 381.0
 offset_top = 15.0
@@ -513,7 +558,7 @@ icon = ExtResource("16_xoli0")
 flat = true
 icon_alignment = 1
 
-[node name="Estrela" type="Button" parent="Buttons/Numero de Estrelas"]
+[node name="Estrela" type="Button" parent="Buttons/Numero de Estrelas" groups=["Click"]]
 layout_mode = 0
 offset_left = -15.0
 offset_top = -11.0
@@ -523,7 +568,7 @@ icon = ExtResource("18_x5prv")
 flat = true
 expand_icon = true
 
-[node name="Numero de Trofeus" type="Button" parent="Buttons"]
+[node name="Numero de Trofeus" type="Button" parent="Buttons" groups=["Click"]]
 layout_mode = 0
 offset_left = 612.0
 offset_top = 16.0
@@ -534,7 +579,7 @@ icon = ExtResource("16_xoli0")
 flat = true
 icon_alignment = 1
 
-[node name="Trofeu" type="Button" parent="Buttons/Numero de Trofeus"]
+[node name="Trofeu" type="Button" parent="Buttons/Numero de Trofeus" groups=["Click"]]
 layout_mode = 0
 offset_left = -15.0
 offset_top = -11.0
@@ -544,18 +589,18 @@ icon = ExtResource("19_ou122")
 flat = true
 expand_icon = true
 
-[node name="Numero de Moedas" type="Button" parent="Buttons"]
+[node name="Numero de Moedas" type="Button" parent="Buttons" groups=["Click"]]
 layout_mode = 0
 offset_left = 955.0
 offset_top = 14.0
 offset_right = 1118.0
 offset_bottom = 50.0
-text = "0"
+text = "1"
 icon = ExtResource("16_xoli0")
 flat = true
 icon_alignment = 1
 
-[node name="Moedas" type="Button" parent="Buttons/Numero de Moedas"]
+[node name="Moedas" type="Button" parent="Buttons/Numero de Moedas" groups=["Click"]]
 layout_mode = 0
 offset_left = -25.0
 offset_top = -11.0
@@ -581,28 +626,28 @@ offset_right = 179.0
 offset_bottom = 25.0
 theme_override_constants/separation = 5
 
-[node name="Totem" type="Button" parent="Buttons/Fundo Preto Inferior/Menu Inferior"]
+[node name="Totem" type="Button" parent="Buttons/Fundo Preto Inferior/Menu Inferior" groups=["Click"]]
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_font_sizes/font_size = 14
 text = "Totem"
 flat = true
 
-[node name="Caixa de Talento" type="Button" parent="Buttons/Fundo Preto Inferior/Menu Inferior"]
+[node name="Caixa de Talento" type="Button" parent="Buttons/Fundo Preto Inferior/Menu Inferior" groups=["Click"]]
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_font_sizes/font_size = 14
 text = "Caixa de Talento"
 flat = true
 
-[node name="Progresso" type="Button" parent="Buttons/Fundo Preto Inferior/Menu Inferior"]
+[node name="Progresso" type="Button" parent="Buttons/Fundo Preto Inferior/Menu Inferior" groups=["Click"]]
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_font_sizes/font_size = 14
 text = "Progresso"
 flat = true
 
-[node name="Comunidade" type="Button" parent="Buttons/Fundo Preto Inferior/Menu Inferior"]
+[node name="Comunidade" type="Button" parent="Buttons/Fundo Preto Inferior/Menu Inferior" groups=["Click"]]
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_font_sizes/font_size = 14
@@ -629,7 +674,7 @@ expand_icon = true
 position = Vector2(989.5, 511.5)
 texture = ExtResource("22_k7dui")
 
-[node name="Modo Sobrevivencia" type="Button" parent="Buttons/Sobrevivencia"]
+[node name="Modo Sobrevivencia" type="Button" parent="Buttons/Sobrevivencia" groups=["Click"]]
 offset_left = -111.0
 offset_top = -36.0
 offset_right = 104.0
@@ -647,7 +692,7 @@ expand_icon = true
 position = Vector2(1014.5, 426.5)
 texture = ExtResource("25_4qxo5")
 
-[node name="Pegue Agora!" type="Button" parent="Buttons/Abyssal Terrors"]
+[node name="Pegue Agora!" type="Button" parent="Buttons/Abyssal Terrors" groups=["Click"]]
 offset_left = -102.5
 offset_top = -39.5
 offset_right = 109.5
@@ -660,7 +705,16 @@ flat = true
 alignment = 0
 expand_icon = true
 
-[node name="Primeira Recompensa" type="Button" parent="Buttons"]
+[node name="LinkButton" type="LinkButton" parent="Buttons/Abyssal Terrors/Pegue Agora!" groups=["Click"]]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+uri = "https://store.steampowered.com/app/2868390/Brotato_Abyssal_Terrors/"
+
+[node name="Primeira Recompensa" type="Button" parent="Buttons" groups=["Click"]]
 layout_mode = 0
 offset_left = 1034.0
 offset_top = 283.0
@@ -673,7 +727,7 @@ icon_alignment = 1
 vertical_icon_alignment = 0
 expand_icon = true
 
-[node name="Vip" type="Button" parent="Buttons"]
+[node name="Vip" type="Button" parent="Buttons" groups=["Click"]]
 layout_mode = 0
 offset_left = 1044.0
 offset_top = 203.0
@@ -686,7 +740,7 @@ icon_alignment = 1
 vertical_icon_alignment = 0
 expand_icon = true
 
-[node name="Loja" type="Button" parent="Buttons"]
+[node name="Loja" type="Button" parent="Buttons" groups=["Click"]]
 layout_mode = 0
 offset_left = 1037.0
 offset_top = 111.0
@@ -699,7 +753,7 @@ icon_alignment = 1
 vertical_icon_alignment = 0
 expand_icon = true
 
-[node name="Fundo de Crescimento" type="Button" parent="Buttons"]
+[node name="Fundo de Crescimento" type="Button" parent="Buttons" groups=["Click"]]
 layout_mode = 0
 offset_left = 925.0
 offset_top = 106.0
@@ -712,7 +766,7 @@ icon_alignment = 1
 vertical_icon_alignment = 0
 expand_icon = true
 
-[node name="Presente" type="Button" parent="Buttons"]
+[node name="Presente" type="Button" parent="Buttons" groups=["Click"]]
 layout_mode = 0
 offset_left = 939.0
 offset_top = 200.0
@@ -736,6 +790,7 @@ expand_icon = true
 [connection signal="pressed" from="Telas/Tela carta de talento/BCarta de Talento 1" to="Telas" method="_on_b_carta_de_talento_1_pressed"]
 [connection signal="pressed" from="Telas/Tela carta de talento/BCarta de Talento 2" to="Telas" method="_on_b_carta_de_talento_2_pressed"]
 [connection signal="pressed" from="Telas/Tela carta de talento/BCarta de Talento 3" to="Telas" method="_on_b_carta_de_talento_3_pressed"]
+[connection signal="pressed" from="Telas/Tela carta de talento/Numero de Moedas" to="Telas" method="_on_numero_de_moedas_pressed"]
 [connection signal="pressed" from="Telas/Tela Loja/X_Loja" to="Telas" method="_on_x_loja_pressed"]
 [connection signal="pressed" from="Telas/Tela Loja/Loja Diaria" to="Telas" method="_on_loja_diaria_pressed"]
 [connection signal="pressed" from="Telas/Tela Loja/Pacote de Presente" to="Telas" method="_on_pacote_de_presente_pressed"]

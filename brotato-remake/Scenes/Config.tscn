@@ -54,7 +54,7 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_uigm1")
 
-[node name="X" type="Button" parent="Control/Menu Config"]
+[node name="X" type="Button" parent="Control/Menu Config" groups=["Click"]]
 layout_mode = 0
 offset_left = 1055.0
 offset_top = 40.0
@@ -81,7 +81,7 @@ grow_horizontal = 2
 grow_vertical = 2
 alignment = 1
 
-[node name="Geral" type="Button" parent="Control/Menu Config/Botoes Config"]
+[node name="Geral" type="Button" parent="Control/Menu Config/Botoes Config" groups=["Click"]]
 layout_mode = 2
 theme_override_font_sizes/font_size = 30
 text = "Geral"
@@ -89,7 +89,7 @@ icon = ExtResource("3_h0npt")
 flat = true
 icon_alignment = 1
 
-[node name="Jogabilidade" type="Button" parent="Control/Menu Config/Botoes Config"]
+[node name="Jogabilidade" type="Button" parent="Control/Menu Config/Botoes Config" groups=["Click"]]
 layout_mode = 2
 theme_override_font_sizes/font_size = 30
 text = "Jogabilidade"
@@ -97,7 +97,7 @@ icon = ExtResource("3_h0npt")
 flat = true
 icon_alignment = 1
 
-[node name="Armaz_ nuvem" type="Button" parent="Control/Menu Config/Botoes Config"]
+[node name="Armaz_ nuvem" type="Button" parent="Control/Menu Config/Botoes Config" groups=["Click"]]
 layout_mode = 2
 theme_override_font_sizes/font_size = 15
 text = "    Armazenamento em Nuvem"
@@ -111,7 +111,7 @@ position = Vector2(296, 25.5)
 scale = Vector2(0.907608, 0.703125)
 texture = ExtResource("4_emnuf")
 
-[node name="Datenschutz" type="Button" parent="Control/Menu Config/Botoes Config"]
+[node name="Datenschutz" type="Button" parent="Control/Menu Config/Botoes Config" groups=["Click"]]
 layout_mode = 2
 theme_override_font_sizes/font_size = 30
 text = "Datenschutz"
@@ -131,7 +131,7 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 theme_override_styles/panel = SubResource("StyleBoxFlat_uigm1")
 
-[node name="Voltar Jogabilidade" type="Button" parent="Control/Menu Config Jogabilidade"]
+[node name="Voltar Jogabilidade" type="Button" parent="Control/Menu Config Jogabilidade" groups=["Click"]]
 layout_mode = 0
 offset_left = 19.0
 offset_top = 24.0
@@ -169,7 +169,7 @@ layout_mode = 2
 size_flags_vertical = 3
 theme_override_styles/panel = SubResource("StyleBoxTexture_bre5d")
 
-[node name="CheckButton" type="CheckButton" parent="Control/Menu Config Jogabilidade/Botoes/Botoes Esquerda/Vibracao" groups=["Toogle"]]
+[node name="CheckButton" type="CheckButton" parent="Control/Menu Config Jogabilidade/Botoes/Botoes Esquerda/Vibracao" groups=["Toggle"]]
 layout_mode = 0
 offset_left = 1.0
 offset_top = 2.0
@@ -187,7 +187,7 @@ layout_mode = 2
 size_flags_vertical = 3
 theme_override_styles/panel = SubResource("StyleBoxTexture_bre5d")
 
-[node name="CheckButton" type="CheckButton" parent="Control/Menu Config Jogabilidade/Botoes/Botoes Esquerda/Barra PV do Personagem" groups=["Toogle"]]
+[node name="CheckButton" type="CheckButton" parent="Control/Menu Config Jogabilidade/Botoes/Botoes Esquerda/Barra PV do Personagem" groups=["Toggle"]]
 layout_mode = 0
 offset_left = 1.0
 offset_top = 2.0
@@ -205,7 +205,7 @@ layout_mode = 2
 size_flags_vertical = 3
 theme_override_styles/panel = SubResource("StyleBoxTexture_bre5d")
 
-[node name="CheckButton" type="CheckButton" parent="Control/Menu Config Jogabilidade/Botoes/Botoes Esquerda/Barra de Pv nos Chefes" groups=["Toogle"]]
+[node name="CheckButton" type="CheckButton" parent="Control/Menu Config Jogabilidade/Botoes/Botoes Esquerda/Barra de Pv nos Chefes" groups=["Toggle"]]
 layout_mode = 0
 offset_left = 1.0
 offset_top = 2.0
@@ -223,7 +223,7 @@ layout_mode = 2
 size_flags_vertical = 3
 theme_override_styles/panel = SubResource("StyleBoxTexture_bre5d")
 
-[node name="CheckButton" type="CheckButton" parent="Control/Menu Config Jogabilidade/Botoes/Botoes Esquerda/Joystick Fixo" groups=["Toogle"]]
+[node name="CheckButton" type="CheckButton" parent="Control/Menu Config Jogabilidade/Botoes/Botoes Esquerda/Joystick Fixo" groups=["Toggle"]]
 layout_mode = 0
 offset_left = 1.0
 offset_top = 2.0
@@ -246,7 +246,7 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Button" type="Button" parent="Control/Menu Config Jogabilidade/Botoes/Botoes Esquerda/Pontuacao e Onda/Pontuacao sem Fim" groups=["Toogle"]]
+[node name="Button" type="Button" parent="Control/Menu Config Jogabilidade/Botoes/Botoes Esquerda/Pontuacao e Onda/Pontuacao sem Fim"]
 layout_mode = 0
 offset_left = 5.0
 offset_top = 2.0
@@ -263,7 +263,7 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 theme_override_styles/panel = SubResource("StyleBoxTexture_bre5d")
 
-[node name="Tipo de Onda" type="Button" parent="Control/Menu Config Jogabilidade/Botoes/Botoes Esquerda/Pontuacao e Onda/Onda Maxima"]
+[node name="Tipo de Onda" type="Button" parent="Control/Menu Config Jogabilidade/Botoes/Botoes Esquerda/Pontuacao e Onda/Onda Maxima" groups=["Click"]]
 layout_mode = 0
 offset_left = 5.0
 offset_top = 2.0
@@ -286,7 +286,7 @@ offset_bottom = 124.0
 size_flags_vertical = 3
 theme_override_styles/panel = SubResource("StyleBoxTexture_n7ua5")
 
-[node name="Onda Maxima" type="Button" parent="Control/Menu Config Jogabilidade/Botoes/Botoes Esquerda/Pontuacao e Onda/Onda Maxima/Tipo de Onda/Ondas"]
+[node name="Onda Maxima" type="Button" parent="Control/Menu Config Jogabilidade/Botoes/Botoes Esquerda/Pontuacao e Onda/Onda Maxima/Tipo de Onda/Ondas" groups=["Click"]]
 layout_mode = 2
 offset_left = 27.0
 offset_top = 1.0
@@ -297,7 +297,7 @@ text = "Onda Maxima"
 flat = true
 icon_alignment = 1
 
-[node name="Maior dificuldade" type="Button" parent="Control/Menu Config Jogabilidade/Botoes/Botoes Esquerda/Pontuacao e Onda/Onda Maxima/Tipo de Onda/Ondas"]
+[node name="Maior dificuldade" type="Button" parent="Control/Menu Config Jogabilidade/Botoes/Botoes Esquerda/Pontuacao e Onda/Onda Maxima/Tipo de Onda/Ondas" groups=["Click"]]
 layout_mode = 2
 offset_left = 25.0
 offset_top = 43.0
@@ -326,7 +326,7 @@ layout_mode = 2
 size_flags_vertical = 3
 theme_override_styles/panel = SubResource("StyleBoxTexture_bre5d")
 
-[node name="CheckButton" type="CheckButton" parent="Control/Menu Config Jogabilidade/Botoes/Botoes Direita/Destaque de Personagem" groups=["Toogle"]]
+[node name="CheckButton" type="CheckButton" parent="Control/Menu Config Jogabilidade/Botoes/Botoes Direita/Destaque de Personagem" groups=["Toggle"]]
 layout_mode = 0
 offset_left = 1.0
 offset_top = 2.0
@@ -345,7 +345,7 @@ size_flags_vertical = 3
 theme_override_styles/panel = SubResource("StyleBoxTexture_bre5d")
 metadata/_edit_group_ = true
 
-[node name="CheckButton" type="CheckButton" parent="Control/Menu Config Jogabilidade/Botoes/Botoes Direita/Destaque de Armas" groups=["Toogle"]]
+[node name="CheckButton" type="CheckButton" parent="Control/Menu Config Jogabilidade/Botoes/Botoes Direita/Destaque de Armas" groups=["Toggle"]]
 layout_mode = 0
 offset_left = 1.0
 offset_top = 2.0
@@ -363,7 +363,7 @@ layout_mode = 2
 size_flags_vertical = 3
 theme_override_styles/panel = SubResource("StyleBoxTexture_bre5d")
 
-[node name="CheckButton" type="CheckButton" parent="Control/Menu Config Jogabilidade/Botoes/Botoes Direita/Destaque de Projeteis" groups=["Toogle"]]
+[node name="CheckButton" type="CheckButton" parent="Control/Menu Config Jogabilidade/Botoes/Botoes Direita/Destaque de Projeteis" groups=["Toggle"]]
 layout_mode = 0
 offset_left = 1.0
 offset_top = 2.0
@@ -381,7 +381,7 @@ layout_mode = 2
 size_flags_vertical = 3
 theme_override_styles/panel = SubResource("StyleBoxTexture_bre5d")
 
-[node name="CheckButton" type="CheckButton" parent="Control/Menu Config Jogabilidade/Botoes/Botoes Direita/Escurecimento de Tela" groups=["Toogle"]]
+[node name="CheckButton" type="CheckButton" parent="Control/Menu Config Jogabilidade/Botoes/Botoes Direita/Escurecimento de Tela" groups=["Toggle"]]
 layout_mode = 0
 offset_left = 1.0
 offset_top = 2.0
@@ -399,7 +399,7 @@ layout_mode = 2
 size_flags_vertical = 3
 theme_override_styles/panel = SubResource("StyleBoxTexture_bre5d")
 
-[node name="CheckButton" type="CheckButton" parent="Control/Menu Config Jogabilidade/Botoes/Botoes Direita/Explosoes" groups=["Toogle"]]
+[node name="CheckButton" type="CheckButton" parent="Control/Menu Config Jogabilidade/Botoes/Botoes Direita/Explosoes" groups=["Toggle"]]
 layout_mode = 0
 offset_left = 1.0
 offset_top = 2.0
@@ -425,7 +425,7 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 theme_override_styles/panel = SubResource("StyleBoxFlat_uigm1")
 
-[node name="Voltar Geral" type="Button" parent="Control/Menu Config Geral"]
+[node name="Voltar Geral" type="Button" parent="Control/Menu Config Geral" groups=["Click"]]
 layout_mode = 0
 offset_left = 19.0
 offset_top = 24.0
@@ -465,7 +465,7 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 theme_override_styles/panel = SubResource("StyleBoxTexture_bre5d")
 
-[node name="Tipo de Linguagem" type="Button" parent="Control/Menu Config Geral/Botoes/Botoes Esquerda/Linguagem"]
+[node name="Tipo de Linguagem" type="Button" parent="Control/Menu Config Geral/Botoes/Botoes Esquerda/Linguagem" groups=["Click"]]
 layout_mode = 0
 offset_left = 5.0
 offset_top = 2.0
@@ -483,7 +483,7 @@ layout_mode = 2
 size_flags_vertical = 3
 theme_override_styles/panel = SubResource("StyleBoxTexture_bre5d")
 
-[node name="CheckButton" type="CheckButton" parent="Control/Menu Config Geral/Botoes/Botoes Esquerda/Tremor de Tela" groups=["Toogle"]]
+[node name="CheckButton" type="CheckButton" parent="Control/Menu Config Geral/Botoes/Botoes Esquerda/Tremor de Tela" groups=["Toggle"]]
 layout_mode = 0
 offset_left = 1.0
 offset_top = 2.0
@@ -501,7 +501,7 @@ layout_mode = 2
 size_flags_vertical = 3
 theme_override_styles/panel = SubResource("StyleBoxTexture_bre5d")
 
-[node name="CheckButton" type="CheckButton" parent="Control/Menu Config Geral/Botoes/Botoes Esquerda/Efeitos Visuais" groups=["Toogle"]]
+[node name="CheckButton" type="CheckButton" parent="Control/Menu Config Geral/Botoes/Botoes Esquerda/Efeitos Visuais" groups=["Toggle"]]
 layout_mode = 0
 offset_left = 1.0
 offset_top = 2.0
@@ -519,7 +519,7 @@ layout_mode = 2
 size_flags_vertical = 3
 theme_override_styles/panel = SubResource("StyleBoxTexture_bre5d")
 
-[node name="CheckButton" type="CheckButton" parent="Control/Menu Config Geral/Botoes/Botoes Esquerda/Exibicao de Dano" groups=["Toogle"]]
+[node name="CheckButton" type="CheckButton" parent="Control/Menu Config Geral/Botoes/Botoes Esquerda/Exibicao de Dano" groups=["Toggle"]]
 layout_mode = 0
 offset_left = 1.0
 offset_top = 2.0
@@ -561,7 +561,7 @@ flat = true
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 1
-value = 80.0
+value = 50.0
 show_percentage = false
 
 [node name="Music Percent" type="ProgressBar" parent="Control/Menu Config Geral/Botoes/Botoes Direita/Musica e Som/Musica Box/Music ProgressBar"]
@@ -573,7 +573,7 @@ size_flags_horizontal = 3
 size_flags_vertical = 1
 theme_override_styles/background = SubResource("StyleBoxTexture_h0npt")
 theme_override_styles/fill = SubResource("StyleBoxTexture_emnuf")
-value = 80.0
+value = 50.0
 
 [node name="Music Bar" type="HScrollBar" parent="Control/Menu Config Geral/Botoes/Botoes Direita/Musica e Som/Musica Box/Music ProgressBar"]
 layout_mode = 1
@@ -585,7 +585,7 @@ grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 1
 size_flags_stretch_ratio = 6.37
-value = 80.0
+value = 50.0
 
 [node name="Som Box" type="HBoxContainer" parent="Control/Menu Config Geral/Botoes/Botoes Direita/Musica e Som"]
 layout_mode = 2
@@ -600,7 +600,7 @@ flat = true
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 1
-value = 80.0
+value = 50.0
 show_percentage = false
 
 [node name="Sound Percent" type="ProgressBar" parent="Control/Menu Config Geral/Botoes/Botoes Direita/Musica e Som/Som Box/Sound ProgressBar"]
@@ -612,7 +612,7 @@ size_flags_horizontal = 3
 size_flags_vertical = 1
 theme_override_styles/background = SubResource("StyleBoxTexture_h0npt")
 theme_override_styles/fill = SubResource("StyleBoxTexture_emnuf")
-value = 80.0
+value = 50.0
 
 [node name="Sound Bar" type="HScrollBar" parent="Control/Menu Config Geral/Botoes/Botoes Direita/Musica e Som/Som Box/Sound ProgressBar"]
 layout_mode = 1
@@ -624,7 +624,7 @@ grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 1
 size_flags_stretch_ratio = 6.37
-value = 80.0
+value = 50.0
 
 [node name="Linguas" type="Panel" parent="Control/Menu Config Geral"]
 visible = false
@@ -637,13 +637,18 @@ size_flags_vertical = 3
 theme_override_styles/panel = SubResource("StyleBoxTexture_n7ua5")
 metadata/_edit_group_ = true
 
-[node name="Opcao de Linguas" type="VBoxContainer" parent="Control/Menu Config Geral/Linguas"]
+[node name="ScrollContainer" type="ScrollContainer" parent="Control/Menu Config Geral/Linguas"]
 layout_mode = 0
-offset_right = 412.0
-offset_bottom = 283.0
+offset_right = 417.0
+offset_bottom = 285.0
+
+[node name="Opcao de Linguas" type="VBoxContainer" parent="Control/Menu Config Geral/Linguas/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
 theme_override_constants/separation = 5
 
-[node name="Portugues" type="Button" parent="Control/Menu Config Geral/Linguas/Opcao de Linguas"]
+[node name="Portugues" type="Button" parent="Control/Menu Config Geral/Linguas/ScrollContainer/Opcao de Linguas" groups=["Click"]]
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_font_sizes/font_size = 25
@@ -651,7 +656,7 @@ text = "Portugues"
 flat = true
 icon_alignment = 1
 
-[node name="English" type="Button" parent="Control/Menu Config Geral/Linguas/Opcao de Linguas"]
+[node name="English" type="Button" parent="Control/Menu Config Geral/Linguas/ScrollContainer/Opcao de Linguas" groups=["Click"]]
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_font_sizes/font_size = 25
@@ -660,7 +665,7 @@ text = "English
 flat = true
 icon_alignment = 1
 
-[node name="Francais" type="Button" parent="Control/Menu Config Geral/Linguas/Opcao de Linguas"]
+[node name="Francais" type="Button" parent="Control/Menu Config Geral/Linguas/ScrollContainer/Opcao de Linguas" groups=["Click"]]
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_font_sizes/font_size = 25
@@ -669,25 +674,49 @@ text = "Francais
 flat = true
 icon_alignment = 1
 
-[node name="English3" type="Button" parent="Control/Menu Config Geral/Linguas/Opcao de Linguas"]
+[node name="中文" type="Button" parent="Control/Menu Config Geral/Linguas/ScrollContainer/Opcao de Linguas" groups=["Click"]]
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_font_sizes/font_size = 25
-text = "English
+text = "中文
 "
 flat = true
 icon_alignment = 1
 
-[node name="English4" type="Button" parent="Control/Menu Config Geral/Linguas/Opcao de Linguas"]
+[node name="日本語" type="Button" parent="Control/Menu Config Geral/Linguas/ScrollContainer/Opcao de Linguas" groups=["Click"]]
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_font_sizes/font_size = 25
-text = "English
+text = "日本語 
 "
 flat = true
 icon_alignment = 1
 
-[node name="Polski" type="Button" parent="Control/Menu Config Geral/Linguas/Opcao de Linguas"]
+[node name="한국어" type="Button" parent="Control/Menu Config Geral/Linguas/ScrollContainer/Opcao de Linguas" groups=["Click"]]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 25
+text = "한국어"
+flat = true
+icon_alignment = 1
+
+[node name="繁体中文" type="Button" parent="Control/Menu Config Geral/Linguas/ScrollContainer/Opcao de Linguas" groups=["Click"]]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 25
+text = "繁体中文"
+flat = true
+icon_alignment = 1
+
+[node name="Русский язык" type="Button" parent="Control/Menu Config Geral/Linguas/ScrollContainer/Opcao de Linguas" groups=["Click"]]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 25
+text = "Русский язык"
+flat = true
+icon_alignment = 1
+
+[node name="Polski" type="Button" parent="Control/Menu Config Geral/Linguas/ScrollContainer/Opcao de Linguas" groups=["Click"]]
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_font_sizes/font_size = 25
@@ -710,3 +739,12 @@ icon_alignment = 1
 [connection signal="toggled" from="Control/Menu Config Geral/Botoes/Botoes Esquerda/Efeitos Visuais/CheckButton" to="Botao Supremo" method="_on_check_button_toggled"]
 [connection signal="value_changed" from="Control/Menu Config Geral/Botoes/Botoes Direita/Musica e Som/Musica Box/Music ProgressBar/Music Bar" to="Botao Supremo" method="_on_music_bar_value_changed"]
 [connection signal="value_changed" from="Control/Menu Config Geral/Botoes/Botoes Direita/Musica e Som/Som Box/Sound ProgressBar/Sound Bar" to="Botao Supremo" method="_on_sound_bar_value_changed"]
+[connection signal="pressed" from="Control/Menu Config Geral/Linguas/ScrollContainer/Opcao de Linguas/Portugues" to="Botao Supremo" method="_on_portugues_pressed"]
+[connection signal="pressed" from="Control/Menu Config Geral/Linguas/ScrollContainer/Opcao de Linguas/English" to="Botao Supremo" method="_on_english_pressed"]
+[connection signal="pressed" from="Control/Menu Config Geral/Linguas/ScrollContainer/Opcao de Linguas/Francais" to="Botao Supremo" method="_on_francais_pressed"]
+[connection signal="pressed" from="Control/Menu Config Geral/Linguas/ScrollContainer/Opcao de Linguas/中文" to="Botao Supremo" method="_on_中文_pressed"]
+[connection signal="pressed" from="Control/Menu Config Geral/Linguas/ScrollContainer/Opcao de Linguas/日本語" to="Botao Supremo" method="_on_日本語_pressed"]
+[connection signal="pressed" from="Control/Menu Config Geral/Linguas/ScrollContainer/Opcao de Linguas/한국어" to="Botao Supremo" method="_on_한국어_pressed"]
+[connection signal="pressed" from="Control/Menu Config Geral/Linguas/ScrollContainer/Opcao de Linguas/繁体中文" to="Botao Supremo" method="_on_繁体中文_pressed"]
+[connection signal="pressed" from="Control/Menu Config Geral/Linguas/ScrollContainer/Opcao de Linguas/Русский язык" to="Botao Supremo" method="_on_русский_язык_pressed"]
+[connection signal="pressed" from="Control/Menu Config Geral/Linguas/ScrollContainer/Opcao de Linguas/Polski" to="Botao Supremo" method="_on_polski_pressed"]

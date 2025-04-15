@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://b113rkxma4k2k"]
+[gd_scene load_steps=24 format=3 uid="uid://b113rkxma4k2k"]
 
 [ext_resource type="Texture2D" uid="uid://da7mn1euech3y" path="res://Images/Telas/Fundo de Grama.png" id="1_q5p73"]
 [ext_resource type="Texture2D" uid="uid://ekqlla2628fw" path="res://Images/Personagens/Redondinho.png" id="1_uvmvs"]
@@ -19,6 +19,9 @@
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_t8qf4"]
 bg_color = Color(0, 0, 0, 0.784314)
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_a8vsv"]
+bg_color = Color(0, 0, 0, 1)
+
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_xc6eg"]
 texture = ExtResource("1_q5p73")
 axis_stretch_horizontal = 2
@@ -34,10 +37,10 @@ texture = ExtResource("3_6f55w")
 texture = ExtResource("5_8gc3d")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_63gko"]
-size = Vector2(20, 662)
+size = Vector2(77.5, 1232.5)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xc6eg"]
-size = Vector2(1190, 20)
+size = Vector2(1988, 37)
 
 [node name="Node2D" type="Node2D"]
 
@@ -74,7 +77,7 @@ grow_vertical = 2
 theme_override_constants/separation = -9
 alignment = 1
 
-[node name="Proximo Pause" type="Button" parent="Telas/Menu Pause/Botoes Pause"]
+[node name="Proximo Pause" type="Button" parent="Telas/Menu Pause/Botoes Pause" groups=["Click"]]
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_font_sizes/font_size = 20
@@ -84,7 +87,7 @@ flat = true
 icon_alignment = 1
 expand_icon = true
 
-[node name="Voltar ao Menu Principal" type="Button" parent="Telas/Menu Pause/Botoes Pause"]
+[node name="Voltar ao Menu Principal" type="Button" parent="Telas/Menu Pause/Botoes Pause" groups=["Click"]]
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_font_sizes/font_size = 20
@@ -94,7 +97,7 @@ flat = true
 icon_alignment = 1
 expand_icon = true
 
-[node name="Opcoes" type="Button" parent="Telas/Menu Pause/Botoes Pause"]
+[node name="Opcoes" type="Button" parent="Telas/Menu Pause/Botoes Pause" groups=["Click"]]
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_font_sizes/font_size = 20
@@ -104,7 +107,7 @@ flat = true
 icon_alignment = 1
 expand_icon = true
 
-[node name="Reiniciar" type="Button" parent="Telas/Menu Pause/Botoes Pause"]
+[node name="Reiniciar" type="Button" parent="Telas/Menu Pause/Botoes Pause" groups=["Click"]]
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_font_sizes/font_size = 20
@@ -119,7 +122,7 @@ position = Vector2(-634.875, 124.375)
 scale = Vector2(0.851078, 0.843872)
 texture = ExtResource("2_nacvj")
 
-[node name="Secundario" type="Button" parent="Telas/Menu Pause/Botoes Pause/Tela Primario"]
+[node name="Secundario" type="Button" parent="Telas/Menu Pause/Botoes Pause/Tela Primario" groups=["Click"]]
 offset_left = 13.0
 offset_top = -316.0
 offset_right = 167.0
@@ -132,7 +135,7 @@ position = Vector2(-635.25, 123.75)
 scale = Vector2(0.912607, 0.909537)
 texture = ExtResource("3_ecqpg")
 
-[node name="Primario" type="Button" parent="Telas/Menu Pause/Botoes Pause/Tela Secundario"]
+[node name="Primario" type="Button" parent="Telas/Menu Pause/Botoes Pause/Tela Secundario" groups=["Click"]]
 offset_left = -144.0
 offset_top = -290.0
 offset_right = 6.0
@@ -163,7 +166,7 @@ grow_vertical = 2
 alignment = 1
 metadata/_edit_group_ = true
 
-[node name="Voltar ao Menu Principal?" type="Button" parent="Telas/Menu Confirmar/Botoes Confirmar"]
+[node name="Voltar ao Menu Principal?" type="Button" parent="Telas/Menu Confirmar/Botoes Confirmar" groups=["Click"]]
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_font_sizes/font_size = 44
@@ -171,7 +174,7 @@ text = "Voltar ao Menu Principal?"
 flat = true
 icon_alignment = 1
 
-[node name="Sim" type="Button" parent="Telas/Menu Confirmar/Botoes Confirmar"]
+[node name="Sim" type="Button" parent="Telas/Menu Confirmar/Botoes Confirmar" groups=["Click"]]
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_font_sizes/font_size = 44
@@ -181,7 +184,7 @@ flat = true
 icon_alignment = 1
 expand_icon = true
 
-[node name="Nao" type="Button" parent="Telas/Menu Confirmar/Botoes Confirmar"]
+[node name="Nao" type="Button" parent="Telas/Menu Confirmar/Botoes Confirmar" groups=["Click"]]
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_font_sizes/font_size = 44
@@ -190,6 +193,17 @@ icon = ExtResource("5_5ec1i")
 flat = true
 icon_alignment = 1
 expand_icon = true
+
+[node name="Fundo Preto" type="Panel" parent="."]
+offset_left = -785.0
+offset_top = -449.0
+offset_right = 647.0
+offset_bottom = 400.0
+scale = Vector2(2, 2)
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_a8vsv")
+metadata/_edit_lock_ = true
 
 [node name="Fundo" type="Panel" parent="."]
 offset_left = -516.0
@@ -285,19 +299,19 @@ offset_bottom = 40.0
 [node name="StaticBody2D2" type="StaticBody2D" parent="Limites"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Limites/StaticBody2D2"]
-position = Vector2(0, 321)
+position = Vector2(-395, 429)
 shape = SubResource("RectangleShape2D_63gko")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Limites/StaticBody2D2"]
-position = Vector2(1161, 330)
+position = Vector2(1633, 410)
 shape = SubResource("RectangleShape2D_63gko")
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="Limites/StaticBody2D2"]
-position = Vector2(585, 0)
+position = Vector2(603, -177)
 shape = SubResource("RectangleShape2D_xc6eg")
 
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="Limites/StaticBody2D2"]
-position = Vector2(588, 653)
+position = Vector2(598, 1013)
 shape = SubResource("RectangleShape2D_xc6eg")
 
 [node name="Config" parent="." instance=ExtResource("15_a8vsv")]

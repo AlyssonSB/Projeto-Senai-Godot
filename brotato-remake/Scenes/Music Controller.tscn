@@ -1,17 +1,27 @@
-[gd_scene load_steps=4 format=3 uid="uid://dcaq0siquimoh"]
+[gd_scene load_steps=5 format=3 uid="uid://dcaq0siquimoh"]
 
 [ext_resource type="Script" uid="uid://ci5aavky8lys" path="res://Scripts/music_controller.gd" id="1_nosng"]
-[ext_resource type="AudioStream" uid="uid://170gtu5dcub7" path="res://Audio/Show de Fundo.mp3" id="1_ntlra"]
-[ext_resource type="AudioStream" uid="uid://6vyayoh3nihm" path="res://Audio/Toogle.mp3" id="2_5wcu8"]
+[ext_resource type="AudioStream" uid="uid://6vyayoh3nihm" path="res://Audio/Toggle.mp3" id="2_5wcu8"]
+[ext_resource type="AudioStream" uid="uid://b5cs3ecw6f2jq" path="res://Audio/Brotato Abyssal Terrors Original Soundtrack - Thalassophobia.mp3" id="2_nosng"]
+[ext_resource type="AudioStream" uid="uid://bafl42hj27kvj" path="res://Audio/Click.mp3" id="4_ftvna"]
 
 [node name="Music Controller" type="Node"]
 script = ExtResource("1_nosng")
 
-[node name="Show de Fundo" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("1_ntlra")
-volume_db = -80.0
+[node name="Som de Fundo" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_nosng")
+volume_db = -25.0
 autoplay = true
 mix_target = 2
 
-[node name="Toogle" type="AudioStreamPlayer" parent="." groups=["Toogle"]]
+[node name="Toggle" type="AudioStreamPlayer" parent="." groups=["Toggle"]]
 stream = ExtResource("2_5wcu8")
+volume_db = -25.0
+mix_target = 2
+playback_type = 1
+
+[node name="Click" type="AudioStreamPlayer" parent="." groups=["Click"]]
+stream = ExtResource("4_ftvna")
+volume_db = -25.0
+mix_target = 2
+playback_type = 1
